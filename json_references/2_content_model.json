@@ -36,7 +36,13 @@
       "supports": ["required", "default", "validation"]
     },
     "image": {
-      "supports": ["required", "alt_required", "fallback"]
+      "supports": ["required", "alt_required", "fallback"],
+      "type": "image",
+      "required": false,
+      "alt_required": true,
+      "responsive": true,
+      "aspect_ratio": "",
+      "roles": ["hero", "content", "icon"]
     },
     "link": {
       "supports": ["required", "fallback"]

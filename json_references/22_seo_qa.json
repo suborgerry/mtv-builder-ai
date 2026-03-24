@@ -61,12 +61,6 @@
     "canonical_valid": false,
     "duplicate_url_risk": false
   },
-  "images": {
-    "total": 0,
-    "missing_alt": 0,
-    "alt_language": "en",
-    "keyword_in_alt": false
-  },
   "issues": [],
   "recommendations": [],
   "score": {
