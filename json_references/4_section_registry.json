@@ -1,0 +1,45 @@
+{
+  "registry_version": "",
+  "sections": {
+    "section_type_key": {
+      "label": "",
+      "purpose": "",
+      "category": "",
+      "allowed_page_types": [],
+      "content_entity_ref": "",
+      "template": {
+        "path": "",
+        "render_engine": "",
+        "partial_name": ""
+      },
+      "acf": {
+        "group_key": "",
+        "group_name": ""
+      },
+      "variants": [],
+      "themes": [],
+      "constraints": {
+        "max_instances_per_page": 1,
+        "min_items": null,
+        "max_items": null,
+        "requires_fields": [],
+        "forbids_with": [],
+        "recommended_before": [],
+        "recommended_after": []
+      },
+      "performance": {
+        "weight": "",
+        "heavy_media": false,
+        "interactive": false
+      },
+      "preview": {
+        "has_preview": true,
+        "preview_component": ""
+      },
+      "status": {
+        "active": true,
+        "deprecated": false
+      }
+    }
+  }
+}

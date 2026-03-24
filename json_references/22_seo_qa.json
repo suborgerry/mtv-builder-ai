@@ -1,0 +1,81 @@
+{
+  "page_id": "",
+  "seo_version": "",
+  "meta": {
+    "title": {
+      "value": "",
+      "length": 0,
+      "valid": false
+    },
+    "description": {
+      "value": "",
+      "length": 0,
+      "valid": false
+    },
+    "robots": "",
+    "canonical": ""
+  },
+  "headings": {
+    "has_h1": false,
+    "h1_count": 0,
+    "h1_text": "",
+    "heading_structure_valid": false,
+    "issues": []
+  },
+  "content": {
+    "word_count": 0,
+    "keyword_present": false,
+    "keyword_density": 0,
+    "lsi_keywords_present": false,
+    "readability_score": 0,
+    "duplicate_content_risk": false
+  },
+  "images": {
+    "total_images": 0,
+    "missing_alt_count": 0,
+    "alt_language": "en",
+    "alt_quality_score": 0
+  },
+  "links": {
+    "internal_links_count": 0,
+    "external_links_count": 0,
+    "has_broken_links": false,
+    "anchor_text_quality": 0
+  },
+  "structure": {
+    "has_schema_markup": false,
+    "has_breadcrumbs": false,
+    "has_semantic_html": false
+  },
+  "performance": {
+    "lazy_loading_images": false,
+    "image_sizes_optimized": false,
+    "cls_safe": false
+  },
+  "accessibility": {
+    "aria_present": false,
+    "contrast_ok": false
+  },
+  "indexability": {
+    "noindex": false,
+    "canonical_valid": false,
+    "duplicate_url_risk": false
+  },
+  "images": {
+    "total": 0,
+    "missing_alt": 0,
+    "alt_language": "en",
+    "keyword_in_alt": false
+  },
+  "issues": [],
+  "recommendations": [],
+  "score": {
+    "meta": 0,
+    "content": 0,
+    "structure": 0,
+    "technical": 0,
+    "total": 0,
+    "threshold": 0,
+    "passed": false
+  }
+}

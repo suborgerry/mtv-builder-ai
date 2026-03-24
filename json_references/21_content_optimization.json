@@ -1,0 +1,139 @@
+{
+  "page_id": "",
+  "optimization_version": "",
+  "inputs": {
+    "page_goal_ref": "",
+    "content_model_ref": "",
+    "page_structure_ref": "",
+    "render_spec_ref": "",
+    "performance_budget_ref": "",
+    "keyword_model_ref": ""
+  },
+  "image_optimization": {
+    "missing_alt": [],
+    "non_descriptive_alt": [],
+    "oversized_images": [],
+    "wrong_formats": [],
+    "lcp_risk_images": [],
+    "proposed_actions": []
+  },
+  "seo_optimization": {
+    "primary_keyword": "",
+    "secondary_keywords": [],
+    "related_entities": [],
+    "content_intent": "",
+    "title_alignment": {
+      "keyword_present": false,
+      "needs_update": false,
+      "proposed_action": ""
+    },
+    "h1_alignment": {
+      "keyword_present": false,
+      "needs_update": false,
+      "proposed_action": ""
+    },
+    "intro_alignment": {
+      "answers_intent_early": false,
+      "keyword_present": false,
+      "needs_update": false,
+      "proposed_action": ""
+    },
+    "heading_optimization": {
+      "structure_valid": false,
+      "missing_topics": [],
+      "duplicate_topics": [],
+      "proposed_actions": []
+    },
+    "body_content_optimization": {
+      "thin_sections": [],
+      "redundant_sections": [],
+      "missing_supporting_content": [],
+      "proposed_actions": []
+    },
+    "linking_optimization": {
+      "missing_internal_links": [],
+      "weak_anchor_texts": [],
+      "proposed_actions": []
+    },
+    "image_seo_optimization": {
+      "missing_alt_fields": [],
+      "non_descriptive_alt_fields": [],
+      "alt_language": "en",
+      "proposed_actions": []
+    },
+    "people_first_check": {
+      "helpful": false,
+      "experience_signals_present": false,
+      "trust_signals_present": false,
+      "over_optimized_risk": false,
+      "proposed_actions": []
+    }
+  },
+  "core_web_vitals_optimization": {
+    "lcp": {
+      "risk_level": "",
+      "largest_candidate_type": "",
+      "issues": [],
+      "proposed_actions": []
+    },
+    "inp": {
+      "risk_level": "",
+      "interactive_components": [],
+      "issues": [],
+      "proposed_actions": []
+    },
+    "cls": {
+      "risk_level": "",
+      "unstable_components": [],
+      "issues": [],
+      "proposed_actions": []
+    },
+    "media_optimization": {
+      "heavy_images": [],
+      "missing_dimensions": [],
+      "lazyload_exceptions": [],
+      "proposed_actions": []
+    },
+    "layout_optimization": {
+      "unstable_blocks": [],
+      "deep_dom_sections": [],
+      "proposed_actions": []
+    },
+    "font_optimization": {
+      "blocking_fonts_present": false,
+      "proposed_actions": []
+    },
+    "script_optimization": {
+      "heavy_components": [],
+      "unnecessary_interactions": [],
+      "proposed_actions": []
+    }
+  },
+  "section_level_actions": [
+    {
+      "section_id": "",
+      "section_type": "",
+      "seo_actions": [],
+      "cwv_actions": [],
+      "content_actions": [],
+      "render_actions": []
+    }
+  ],
+  "global_actions": {
+    "content_changes": [],
+    "template_changes": [],
+    "media_changes": [],
+    "layout_changes": []
+  },
+  "outputs": {
+    "update_page_structure": false,
+    "update_render_spec": false,
+    "update_template_manifest": false,
+    "update_page_builder_config": false
+  },
+  "status": {
+    "optimized": false,
+    "requires_regeneration": false,
+    "notes": []
+  }
+}

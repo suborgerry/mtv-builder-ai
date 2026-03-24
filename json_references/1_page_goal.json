@@ -1,0 +1,56 @@
+{
+  "page_id": "",
+  "page_name": "",
+  "page_type": "",
+  "mode": {
+    "strategy_mode": "",
+    "design_mode": "",
+    "system_mode": ""
+  },
+  "goal": {
+    "primary": "",
+    "secondary": []
+  },
+  "audience": {
+    "segment": "",
+    "awareness_level": "",
+    "intent_level": "",
+    "pain_points": [],
+    "objections": [],
+    "desired_outcomes": []
+  },
+  "business_context": {
+    "product_type": "",
+    "offer_type": "",
+    "market_category": "",
+    "brand_tone": "",
+    "trust_level_required": ""
+  },
+  "primary_cta": {
+    "label": "",
+    "action_type": "",
+    "destination": "",
+    "required": true
+  },
+  "secondary_ctas": [],
+  "constraints": {
+    "cms": "",
+    "theme_system": "",
+    "design_system_required": true,
+    "seo_priority": false,
+    "performance_priority": false,
+    "legal_required": false,
+    "accessibility_required": true,
+    "editor_skill_level": ""
+  },
+  "input_assets": {
+    "brief_present": false,
+    "copy_present": false,
+    "references_present": false,
+    "design_tokens_present": false
+  },
+  "success_criteria": {
+    "must_have": [],
+    "nice_to_have": []
+  }
+}

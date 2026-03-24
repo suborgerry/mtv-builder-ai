@@ -1,0 +1,57 @@
+{
+  "page_id": "",
+  "entities": {
+    "section_key": {
+      "entity_type": "",
+      "purpose": "",
+      "fields": {
+        "field_key": {
+          "type": "",
+          "required": false,
+          "translatable": true,
+          "editable": true,
+          "default": null,
+          "description": "",
+          "validation": {
+            "min_length": null,
+            "max_length": null,
+            "allowed_values": [],
+            "pattern": "",
+            "min_items": null,
+            "max_items": null
+          },
+          "fallback": {
+            "behavior": "",
+            "value": null
+          }
+        }
+      }
+    }
+  },
+  "shared_field_types": {
+    "text": {
+      "supports": ["required", "default", "validation"]
+    },
+    "rich_text": {
+      "supports": ["required", "default", "validation"]
+    },
+    "image": {
+      "supports": ["required", "alt_required", "fallback"]
+    },
+    "link": {
+      "supports": ["required", "fallback"]
+    },
+    "boolean": {
+      "supports": ["default"]
+    },
+    "select": {
+      "supports": ["required", "allowed_values", "default"]
+    },
+    "repeater": {
+      "supports": ["min_items", "max_items", "fields"]
+    },
+    "group": {
+      "supports": ["fields"]
+    }
+  }
+}

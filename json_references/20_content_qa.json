@@ -1,0 +1,20 @@
+{
+  "page_id": "",
+  "checks": {
+    "required_fields_present": false,
+    "links_valid": false,
+    "images_present": false,
+    "alt_texts_present": false,
+    "alt_texts_language": "en",
+    "cta_labels_present": false,
+    "no_empty_repeaters_rendered": false,
+    "images": {
+        "all_have_alt": false,
+        "all_linked_correctly": false,
+        "no_empty_images": false
+    }
+  },
+  "issues": [],
+  "notes": [],
+  "passed": false
+}

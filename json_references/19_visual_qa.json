@@ -1,0 +1,15 @@
+{
+  "page_id": "",
+  "checks": {
+    "hierarchy_clear": false,
+    "cta_visible": false,
+    "spacing_consistent": false,
+    "visual_rhythm_consistent": false,
+    "proof_present": false,
+    "section_order_valid": false,
+    "responsive_safe": false
+  },
+  "issues": [],
+  "notes": [],
+  "passed": false
+}

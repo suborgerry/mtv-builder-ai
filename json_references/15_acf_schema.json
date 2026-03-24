@@ -1,0 +1,28 @@
+{
+  "page_id": "",
+  "groups": [
+    {
+      "key": "",
+      "title": "",
+      "location": [],
+      "fields": [
+        {
+          "key": "",
+          "name": "",
+          "label": "",
+          "type": "",
+          "required": 0,
+          "instructions": "",
+          "default_value": null,
+          "wrapper": {
+            "width": "",
+            "class": "",
+            "id": ""
+          },
+          "conditional_logic": [],
+          "sub_fields": []
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,19 @@
+{
+  "page_id": "",
+  "score_version": "",
+  "scores": {
+    "clarity": 0,
+    "hierarchy": 0,
+    "cta_visibility": 0,
+    "proof_presence": 0,
+    "visual_rhythm": 0,
+    "redundancy": 0,
+    "performance_risk": 0,
+    "editability": 0
+  },
+  "weighted_total": 0,
+  "threshold": 0,
+  "passed": false,
+  "issues": [],
+  "recommendations": []
+}

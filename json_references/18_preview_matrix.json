@@ -1,0 +1,23 @@
+{
+  "page_id": "",
+  "sections": [
+    {
+      "section_id": "",
+      "preview_states": [
+        {
+          "state_name": "",
+          "content_mode": "",
+          "variant": "",
+          "theme": "",
+          "description": ""
+        }
+      ]
+    }
+  ],
+  "global_preview_modes": [
+    "minimal_content",
+    "full_content",
+    "empty_optional_fields",
+    "fallback_state"
+  ]
+}

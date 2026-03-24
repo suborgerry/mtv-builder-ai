@@ -1,0 +1,32 @@
+{
+  "page_id": "",
+  "structure_version": "",
+  "sections": [
+    {
+      "id": "",
+      "section_type": "",
+      "required": true,
+      "purpose": "",
+      "position": 0,
+      "depends_on": [],
+      "notes": ""
+    }
+  ],
+  "flow_rules": {
+    "preferred_sequence": [],
+    "forbidden_adjacencies": [],
+    "required_combinations": [],
+    "optional_combinations": []
+  },
+  "cta_rules": {
+    "max_primary_cta_above_fold": 1,
+    "max_cta_per_section": 2,
+    "max_cta_per_screen": 3
+  },
+  "composition_rules": {
+    "allow_duplicate_section_types": false,
+    "max_same_type_per_page": 1,
+    "enforce_proof_before_final_cta": true,
+    "enforce_problem_solution_flow": false
+  }
+}

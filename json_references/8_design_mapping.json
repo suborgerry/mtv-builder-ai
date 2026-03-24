@@ -1,0 +1,37 @@
+{
+  "mapping_version": "",
+  "system": {
+    "css_framework": "",
+    "token_source": "",
+    "breakpoint_system": ""
+  },
+  "spacing": {
+    "token_key": ""
+  },
+  "typography": {
+    "token_key": ""
+  },
+  "layout": {
+    "token_key": ""
+  },
+  "colors": {
+    "token_key": ""
+  },
+  "radius": {
+    "token_key": ""
+  },
+  "shadows": {
+    "token_key": ""
+  },
+  "components": {
+    "component_key": {
+      "base_classes": "",
+      "variant_classes": {
+        "variant_key": ""
+      },
+      "theme_classes": {
+        "theme_key": ""
+      }
+    }
+  }
+}

@@ -1,0 +1,30 @@
+{
+  "page_id": "",
+  "budget": {
+    "max_heavy_sections": 0,
+    "max_large_images": 0,
+    "max_interactive_blocks": 0,
+    "max_total_media_blocks": 0
+  },
+  "media_rules": {
+    "lazy_load_images": true,
+    "require_responsive_sizes": true,
+    "allow_autoplay_video": false,
+    "prefer_static_over_slider": true
+  },
+  "image_rules": {
+    "max_hero_image_kb": 200,
+    "max_content_image_kb": 150,
+    "allowed_formats": ["webp", "avif"],
+    "require_srcset": true,
+    "require_lazy_loading": true
+  },
+  "section_weights": {
+    "section_id": {
+      "weight": "",
+      "heavy_media": false,
+      "interactive": false
+    }
+  },
+  "violations": []
+}
