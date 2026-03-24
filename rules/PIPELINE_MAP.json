@@ -1,0 +1,45 @@
+{
+  "files": {
+    "1_page_goal.json": {
+      "depends_on": [],
+      "used_by": [
+        "2_content_model.json",
+        "3_page_structure.json",
+        "21_content_optimization.json"
+      ]
+    },
+    "2_content_model.json": {
+      "depends_on": [
+        "1_page_goal.json"
+      ],
+      "used_by": [
+        "7_ui_tree.json",
+        "14_render_spec_generation.json",
+        "15_acf_schema.json"
+      ]
+    },
+    "14_render_spec_generation.json": {
+      "depends_on": [
+        "2_content_model.json",
+        "7_ui_tree.json",
+        "12_section_contracts.json"
+      ],
+      "used_by": [
+        "17_performance_budget.json",
+        "21_content_optimization.json",
+        "23_page_builder_config.json"
+      ]
+    },
+    "23_page_builder_config.json": {
+      "depends_on": [
+        "14_render_spec_generation.json",
+        "21_content_optimization.json",
+        "22_seo_qa.json"
+      ],
+      "used_by": [
+        "index.html",
+        "partials/*.html"
+      ]
+    }
+  }
+}

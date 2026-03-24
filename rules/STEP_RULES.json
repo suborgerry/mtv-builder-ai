@@ -1,0 +1,155 @@
+{
+  "steps": [
+    {
+      "step": 1,
+      "name": "Intent + Structure",
+      "reads": [],
+      "writes": [
+        "1_page_goal.json",
+        "2_content_model.json",
+        "3_page_structure.json",
+        "4_section_registry.json",
+        "5_section_list.json",
+        "6_section_variants.json",
+        "theme_selection.json"
+      ],
+      "must_not_modify": [
+        "7_ui_tree.json",
+        "8_design_mapping.json",
+        "14_render_spec_generation.json",
+        "23_page_builder_config.json"
+      ]
+    },
+    {
+      "step": 2,
+      "name": "Layout + UI",
+      "reads": [
+        "1_page_goal.json",
+        "2_content_model.json",
+        "3_page_structure.json",
+        "4_section_registry.json",
+        "5_section_list.json",
+        "6_section_variants.json",
+        "theme_selection.json"
+      ],
+      "writes": [
+        "7_ui_tree.json",
+        "8_design_mapping.json",
+        "9_constraint_rules.json",
+        "10_structure_score.json",
+        "11_editable_rules.json",
+        "12_section_contracts.json",
+        "13_fallback_states.json"
+      ],
+      "must_not_modify": [
+        "14_render_spec_generation.json",
+        "15_acf_schema.json",
+        "23_page_builder_config.json"
+      ]
+    },
+    {
+      "step": 3,
+      "name": "Render + Schema",
+      "reads": [
+        "1_page_goal.json",
+        "2_content_model.json",
+        "7_ui_tree.json",
+        "8_design_mapping.json",
+        "12_section_contracts.json",
+        "13_fallback_states.json"
+      ],
+      "writes": [
+        "14_render_spec_generation.json",
+        "15_acf_schema.json",
+        "16_sanitization_policy.json"
+      ],
+      "must_not_modify": [
+        "17_performance_budget.json",
+        "21_content_optimization.json",
+        "23_page_builder_config.json"
+      ]
+    },
+    {
+      "step": 4,
+      "name": "Performance + Images",
+      "reads": [
+        "3_page_structure.json",
+        "6_section_variants.json",
+        "14_render_spec_generation.json"
+      ],
+      "writes": [
+        "17_performance_budget.json",
+        "18_preview_matrix.json",
+        "24_image_pipeline.json"
+      ],
+      "must_not_modify": [
+        "19_visual_qa.json",
+        "20_content_qa.json",
+        "23_page_builder_config.json"
+      ]
+    },
+    {
+      "step": 5,
+      "name": "Content Optimization",
+      "reads": [
+        "1_page_goal.json",
+        "2_content_model.json",
+        "3_page_structure.json",
+        "14_render_spec_generation.json",
+        "17_performance_budget.json",
+        "24_image_pipeline.json"
+      ],
+      "writes": [
+        "21_content_optimization.json"
+      ],
+      "must_not_modify": [
+        "22_seo_qa.json",
+        "23_page_builder_config.json"
+      ]
+    },
+    {
+      "step": 6,
+      "name": "QA + Final Config",
+      "reads": [
+        "14_render_spec_generation.json",
+        "17_performance_budget.json",
+        "18_preview_matrix.json",
+        "21_content_optimization.json",
+        "24_image_pipeline.json"
+      ],
+      "writes": [
+        "19_visual_qa.json",
+        "20_content_qa.json",
+        "22_seo_qa.json",
+        "23_page_builder_config.json"
+      ],
+      "must_not_modify": []
+    },
+    {
+      "step": 7,
+      "name": "HTML + Tailwind + Vite Build",
+      "reads": [
+        "8_design_mapping.json",
+        "14_render_spec_generation.json",
+        "16_sanitization_policy.json",
+        "23_page_builder_config.json",
+        "24_image_pipeline.json"
+      ],
+      "writes": [
+        "index.html",
+        "package.json",
+        "vite.config.js",
+        "postcss.config.js",
+        "tailwind.config.js",
+        "src/input.css",
+        "partials/*.html"
+      ],
+      "must_not_modify": [
+        "1_page_goal.json",
+        "2_content_model.json",
+        "3_page_structure.json",
+        "21_content_optimization.json"
+      ]
+    }
+  ]
+}

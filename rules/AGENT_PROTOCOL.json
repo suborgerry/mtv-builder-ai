@@ -1,0 +1,27 @@
+{
+  "project": {
+    "type": "static_page_builder",
+    "stack": {
+      "html": true,
+      "tailwind": true,
+      "vite_build_only": true
+    },
+    "forbidden": [
+      "react",
+      "vue",
+      "jsx",
+      "component_runtime_frameworks"
+    ]
+  },
+  "generation_rules": {
+    "read_before_write": true,
+    "write_only_owned_files": true,
+    "preserve_existing_references": true,
+    "strict_json_only": true,
+    "stop_on_missing_dependencies": true,
+    "no_unrelated_overwrites": true
+  },
+  "agent_rules": "AGENT_RULES.md",
+  "steps_ref": "STEP_RULES.json",
+  "pipeline_ref": "PIPELINE_MAP.json"
+}
