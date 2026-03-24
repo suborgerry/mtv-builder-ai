@@ -51,4 +51,4 @@ IMPORTANT: Follow step rules strictly.
 - avoid deep nesting
 
 ### OUTPUT
-Return ALL generated JSON files.
+Return simple answer.

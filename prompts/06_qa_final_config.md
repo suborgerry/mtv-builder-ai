@@ -44,4 +44,4 @@ IMPORTANT: Follow step rules strictly.
 - config must be consistent with render spec
 
 ### OUTPUT
-Return ALL generated JSON files.
+Return simple answer.

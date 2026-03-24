@@ -39,4 +39,4 @@ IMPORTANT: Follow step rules strictly.
 - prepare for partial templates
 
 ### OUTPUT
-Return ALL generated JSON files.
+Return simple answer.

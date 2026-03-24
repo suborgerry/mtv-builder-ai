@@ -41,4 +41,4 @@ IMPORTANT: Follow step rules strictly.
 - remove useless sections
 
 ### OUTPUT
-Return ALL generated JSON files.
+Return simple answer.

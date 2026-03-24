@@ -48,4 +48,4 @@ IMPORTANT: Follow step rules strictly.
 - limit CTAs
 
 ### OUTPUT
-Return ALL generated JSON files.
+Return simple answer.

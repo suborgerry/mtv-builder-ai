@@ -45,4 +45,4 @@ IMPORTANT: Follow step rules strictly.
 - keep structure clean and readable
 
 ### OUTPUT
-Return ALL generated files (as text content).
+Return simple answer.

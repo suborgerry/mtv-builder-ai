@@ -29,7 +29,7 @@ IMPORTANT: Follow step rules strictly.
    - define responsive sizes
    - define formats (webp/avif)
    - define lazy loading
-   - define alt texts (EN)
+   - define alt texts
 
 4. Define CWV rules:
    - LCP: hero image optimized
@@ -43,4 +43,4 @@ IMPORTANT: Follow step rules strictly.
 - always define width/height
 
 ### OUTPUT
-Return ALL generated JSON files.
+Return simple answer.
