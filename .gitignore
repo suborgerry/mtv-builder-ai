@@ -24,6 +24,7 @@ dist-ssr
 
 json_project/*
 assets/*
-wp_theme/*
-simple/*
-copyright_references/*
+production/wp_theme/*
+production/simple/*
+simple/assets/*
+boilerplate/copyright_references/*
