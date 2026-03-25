@@ -1,0 +1,87 @@
+{
+  "page_id": "ricks-ac-homepage",
+  "optimization_version": "2.0.0",
+  "inputs": {
+    "page_goal_ref": "1_page_goal.json",
+    "content_model_ref": "2_content_model.json",
+    "page_structure_ref": "3_page_structure.json",
+    "render_spec_ref": "14_render_spec_generation.json",
+    "performance_budget_ref": "17_performance_budget.json"
+  },
+  "image_optimization": {
+    "lcp_risk_images": [
+      "assets/images/Home-hero-background.jpg"
+    ],
+    "gallery_density_risk": [
+      "services_grid",
+      "brands_strip",
+      "footer"
+    ],
+    "proposed_actions": [
+      "Keep the hero eager-loaded and convert it to responsive AVIF/WebP derivatives if possible.",
+      "Preserve lazy loading for service photos, badge icons, logos, and footer media.",
+      "Avoid adding more imagery above the services section unless current assets are compressed further."
+    ]
+  },
+  "seo_optimization": {
+    "primary_keyword": "HVAC service",
+    "secondary_keywords": [
+      "AC repair",
+      "heating installation",
+      "HVAC maintenance",
+      "indoor air quality",
+      "Hancock County MS HVAC",
+      "Louisiana HVAC contractor"
+    ],
+    "content_intent": "Help local visitors confirm services, brand support, and direct contact paths quickly.",
+    "title_alignment": {
+      "keyword_present": true,
+      "needs_update": false
+    },
+    "h1_alignment": {
+      "keyword_present": true,
+      "needs_update": false
+    },
+    "heading_optimization": {
+      "structure_valid": true,
+      "missing_topics": [],
+      "proposed_actions": [
+        "Keep the hero promise broad and let the services grid carry the detailed offer list.",
+        "Keep the brands and contact sections concise."
+      ]
+    },
+    "body_content_optimization": {
+      "thin_sections": [],
+      "redundant_sections": [],
+      "proposed_actions": [
+        "Do not introduce generic filler copy into the about or brands sections.",
+        "Preserve service-specific CTA labels on cards."
+      ]
+    }
+  },
+  "core_web_vitals_optimization": {
+    "lcp": {
+      "risk_level": "medium",
+      "largest_candidate_type": "hero_image",
+      "proposed_actions": [
+        "Compress the hero background aggressively.",
+        "Retain fixed dimensions and eager loading."
+      ]
+    },
+    "inp": {
+      "risk_level": "low",
+      "interactive_components": [
+        "mobile_menu_toggle"
+      ],
+      "proposed_actions": [
+        "Keep the burger menu script minimal and dependency-free."
+      ]
+    },
+    "cls": {
+      "risk_level": "low",
+      "proposed_actions": [
+        "Keep explicit width and height attributes on all images."
+      ]
+    }
+  }
+}

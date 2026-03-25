@@ -1,0 +1,256 @@
+{
+  "page_id": "ricks-ac-homepage",
+  "groups": [
+    {
+      "key": "group_hero",
+      "title": "Hero",
+      "fields": [
+        {
+          "name": "eyebrow",
+          "type": "text",
+          "required": 1,
+          "default_value": "Fast, Honest, and Dependable"
+        },
+        {
+          "name": "headline",
+          "type": "text",
+          "required": 1,
+          "default_value": "HVAC service built for real homes, real businesses, and real urgency."
+        },
+        {
+          "name": "supporting_text",
+          "type": "textarea",
+          "required": 1,
+          "default_value": "Rick's AC Maintenance & Service LLC handles repair, installation, maintenance, and indoor air quality across Hancock County, Mississippi and Louisiana communities with a practical, no-nonsense service approach."
+        },
+        {
+          "name": "primary_cta",
+          "type": "group",
+          "required": 1
+        },
+        {
+          "name": "secondary_cta",
+          "type": "group",
+          "required": 0
+        },
+        {
+          "name": "background_image",
+          "type": "image",
+          "required": 1
+        },
+        {
+          "name": "brand_logo",
+          "type": "image",
+          "required": 1
+        },
+        {
+          "name": "metrics",
+          "type": "repeater",
+          "required": 1
+        }
+      ]
+    },
+    {
+      "key": "group_trust_badges",
+      "title": "Trust Badges",
+      "fields": [
+        {
+          "name": "items",
+          "type": "repeater",
+          "required": 1
+        }
+      ]
+    },
+    {
+      "key": "group_services_grid",
+      "title": "Services Grid",
+      "fields": [
+        {
+          "name": "eyebrow",
+          "type": "text",
+          "required": 1
+        },
+        {
+          "name": "headline",
+          "type": "text",
+          "required": 1
+        },
+        {
+          "name": "intro",
+          "type": "textarea",
+          "required": 1
+        },
+        {
+          "name": "services",
+          "type": "repeater",
+          "required": 1
+        }
+      ]
+    },
+    {
+      "key": "group_about_section",
+      "title": "About Section",
+      "fields": [
+        {
+          "name": "eyebrow",
+          "type": "text",
+          "required": 1
+        },
+        {
+          "name": "headline",
+          "type": "text",
+          "required": 1
+        },
+        {
+          "name": "body",
+          "type": "textarea",
+          "required": 1
+        },
+        {
+          "name": "logo_image",
+          "type": "image",
+          "required": 1
+        },
+        {
+          "name": "location_card",
+          "type": "group",
+          "required": 1
+        },
+        {
+          "name": "coverage_card",
+          "type": "group",
+          "required": 1
+        }
+      ]
+    },
+    {
+      "key": "group_brands_strip",
+      "title": "Brands Strip",
+      "fields": [
+        {
+          "name": "eyebrow",
+          "type": "text",
+          "required": 1
+        },
+        {
+          "name": "headline",
+          "type": "text",
+          "required": 1
+        },
+        {
+          "name": "intro",
+          "type": "textarea",
+          "required": 1
+        },
+        {
+          "name": "brands",
+          "type": "repeater",
+          "required": 1
+        }
+      ]
+    },
+    {
+      "key": "group_cta_banner",
+      "title": "CTA Banner",
+      "fields": [
+        {
+          "name": "eyebrow",
+          "type": "text",
+          "required": 1
+        },
+        {
+          "name": "headline",
+          "type": "text",
+          "required": 1
+        },
+        {
+          "name": "body",
+          "type": "textarea",
+          "required": 1
+        },
+        {
+          "name": "primary_cta",
+          "type": "group",
+          "required": 1
+        }
+      ]
+    },
+    {
+      "key": "group_contact_info",
+      "title": "Contact Info",
+      "fields": [
+        {
+          "name": "eyebrow",
+          "type": "text",
+          "required": 1
+        },
+        {
+          "name": "headline",
+          "type": "text",
+          "required": 1
+        },
+        {
+          "name": "phones",
+          "type": "repeater",
+          "required": 1
+        },
+        {
+          "name": "email",
+          "type": "group",
+          "required": 1
+        },
+        {
+          "name": "address",
+          "type": "textarea",
+          "required": 1
+        },
+        {
+          "name": "licenses",
+          "type": "repeater",
+          "required": 1
+        }
+      ]
+    },
+    {
+      "key": "group_footer",
+      "title": "Footer",
+      "fields": [
+        {
+          "name": "brand_logo",
+          "type": "image",
+          "required": 1
+        },
+        {
+          "name": "summary",
+          "type": "textarea",
+          "required": 1
+        },
+        {
+          "name": "services_links",
+          "type": "repeater",
+          "required": 1
+        },
+        {
+          "name": "company_links",
+          "type": "repeater",
+          "required": 1
+        },
+        {
+          "name": "social_icon",
+          "type": "group",
+          "required": 1
+        },
+        {
+          "name": "payment_image",
+          "type": "image",
+          "required": 1
+        },
+        {
+          "name": "legal_text",
+          "type": "text",
+          "required": 1
+        }
+      ]
+    }
+  ]
+}

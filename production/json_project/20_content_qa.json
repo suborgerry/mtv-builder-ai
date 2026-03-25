@@ -1,0 +1,25 @@
+{
+  "page_id": "ricks-ac-homepage",
+  "checks": {
+    "required_fields_present": true,
+    "links_valid": true,
+    "images_present": true,
+    "alt_texts_present": true,
+    "alt_texts_language": "en",
+    "cta_labels_present": true,
+    "no_empty_repeaters_rendered": true,
+    "all_assets_from_images_folder_used": true,
+    "images": {
+      "all_have_alt_or_are_decorative": true,
+      "all_linked_correctly": true,
+      "no_empty_images": true,
+      "total_used_in_markup": 27
+    }
+  },
+  "issues": [],
+  "notes": [
+    "Primary and secondary CTAs map to the contact section, services section, or direct phone actions.",
+    "Decorative badge icons use empty alt text with aria-hidden, while content images retain descriptive alt text."
+  ],
+  "passed": true
+}

@@ -1,0 +1,141 @@
+{
+  "page_id": "ricks-ac-homepage",
+  "structure_version": "2.0.0",
+  "sections": [
+    {
+      "id": "hero",
+      "section_type": "hero",
+      "required": true,
+      "purpose": "Lead with the primary value proposition, full-banner hero image, and immediate CTA.",
+      "position": 1,
+      "depends_on": [],
+      "notes": "Must remain first and retain above-the-fold conversion focus."
+    },
+    {
+      "id": "trust_badges",
+      "section_type": "trust_badges",
+      "required": true,
+      "purpose": "Provide a compact orange trust strip directly after the hero.",
+      "position": 2,
+      "depends_on": [
+        "hero"
+      ],
+      "notes": "Acts as a fast-scanning proof band on desktop and mobile."
+    },
+    {
+      "id": "services",
+      "section_type": "services_grid",
+      "required": true,
+      "purpose": "Show the six service cards with photography and round icon badges.",
+      "position": 3,
+      "depends_on": [
+        "trust_badges"
+      ],
+      "notes": "Primary browsing section and the most image-dense content block after the hero."
+    },
+    {
+      "id": "about",
+      "section_type": "about_section",
+      "required": true,
+      "purpose": "Reinforce company identity and local coverage with logo support and concise copy.",
+      "position": 4,
+      "depends_on": [
+        "services"
+      ],
+      "notes": "Acts as the company introduction in the current page."
+    },
+    {
+      "id": "brands",
+      "section_type": "brands_strip",
+      "required": true,
+      "purpose": "Show supported equipment brands as a dedicated dark logo wall.",
+      "position": 5,
+      "depends_on": [
+        "about"
+      ],
+      "notes": "Provides compatibility proof before the conversion push."
+    },
+    {
+      "id": "final_cta",
+      "section_type": "cta_banner",
+      "required": true,
+      "purpose": "Deliver a strong orange call-to-action after proof sections.",
+      "position": 6,
+      "depends_on": [
+        "brands"
+      ],
+      "notes": "Single primary CTA should stay prominent."
+    },
+    {
+      "id": "contact",
+      "section_type": "contact_info",
+      "required": true,
+      "purpose": "Provide direct phone, email, address, and license information.",
+      "position": 7,
+      "depends_on": [
+        "final_cta"
+      ],
+      "notes": "Combines contact actions and licensing proof in the same section."
+    },
+    {
+      "id": "footer",
+      "section_type": "footer",
+      "required": true,
+      "purpose": "Close with navigation, payments, social link, and legal footer text.",
+      "position": 8,
+      "depends_on": [
+        "contact"
+      ],
+      "notes": "Matches the dark footer weight of the reference."
+    }
+  ],
+  "flow_rules": {
+    "preferred_sequence": [
+      "hero",
+      "trust_badges",
+      "services_grid",
+      "about_section",
+      "brands_strip",
+      "cta_banner",
+      "contact_info",
+      "footer"
+    ],
+    "forbidden_adjacencies": [
+      [
+        "hero",
+        "footer"
+      ]
+    ],
+    "required_combinations": [
+      [
+        "hero",
+        "services_grid"
+      ],
+      [
+        "cta_banner",
+        "contact_info"
+      ],
+      [
+        "contact_info",
+        "footer"
+      ]
+    ],
+    "optional_combinations": [
+      [
+        "about_section",
+        "brands_strip"
+      ]
+    ]
+  },
+  "cta_rules": {
+    "max_primary_cta_above_fold": 1,
+    "max_cta_per_section": 2,
+    "max_cta_per_screen": 3
+  },
+  "composition_rules": {
+    "allow_duplicate_section_types": false,
+    "max_same_type_per_page": 1,
+    "enforce_proof_before_final_cta": true,
+    "enforce_problem_solution_flow": true
+  }
+}

@@ -1,0 +1,97 @@
+{
+  "page_id": "ricks-ac-homepage",
+  "page_name": "Rick's AC Homepage",
+  "page_type": "local_service_homepage",
+  "mode": {
+    "strategy_mode": "conversion_first",
+    "design_mode": "visual_local_service_brand",
+    "system_mode": "static_html_tailwind_vite"
+  },
+  "goal": {
+    "primary": "Drive qualified HVAC calls and contact clicks from homeowners and business owners in Mississippi and Louisiana service areas.",
+    "secondary": [
+      "Build trust through real imagery, brand familiarity, and visible licensing.",
+      "Present repair, installation, maintenance, and indoor air quality services in a visual card layout.",
+      "Keep mobile conversion friction low with a burger menu and direct tap targets."
+    ]
+  },
+  "audience": {
+    "segment": "Homeowners, commercial property contacts, and local prospects seeking HVAC repair, installation, or maintenance.",
+    "awareness_level": "solution_aware",
+    "intent_level": "high",
+    "pain_points": [
+      "Urgent cooling or heating breakdowns",
+      "Need for a contractor who services multiple equipment brands",
+      "Need for visible proof of credibility and licensing",
+      "Need for a mobile-friendly path to contact"
+    ],
+    "objections": [
+      "Concern about response speed",
+      "Uncertainty about service area coverage",
+      "Doubt about professionalism or licensing",
+      "Fear of generic, untrustworthy contractor websites"
+    ],
+    "desired_outcomes": [
+      "Confirm the company offers the needed HVAC service quickly",
+      "See real service imagery and brand support before contacting",
+      "Reach the correct phone number with one tap",
+      "Trust the company enough to book service"
+    ]
+  },
+  "business_context": {
+    "product_type": "HVAC services",
+    "offer_type": "Repair, installation, maintenance, indoor air quality, and multi-brand support",
+    "market_category": "Local residential and commercial home services",
+    "brand_tone": "Bold, practical, dependable, local, and conversion-focused",
+    "trust_level_required": "high"
+  },
+  "primary_cta": {
+    "label": "Schedule Service Today",
+    "action_type": "scroll_to_contact",
+    "destination": "#contact",
+    "required": true
+  },
+  "secondary_ctas": [
+    {
+      "label": "Explore Services",
+      "action_type": "scroll_to_section",
+      "destination": "#services"
+    },
+    {
+      "label": "Call 504-582-5111",
+      "action_type": "phone",
+      "destination": "tel:5045825111"
+    }
+  ],
+  "constraints": {
+    "cms": "none",
+    "theme_system": "custom_tailwind_theme",
+    "design_system_required": true,
+    "seo_priority": true,
+    "performance_priority": true,
+    "legal_required": true,
+    "accessibility_required": true,
+    "editor_skill_level": "basic"
+  },
+  "input_assets": {
+    "brief_present": true,
+    "copy_present": true,
+    "references_present": true,
+    "design_tokens_present": true,
+    "images_present": true
+  },
+  "success_criteria": {
+    "must_have": [
+      "Hero uses a full-banner background image with visible CTA above the fold",
+      "All images from assets/images are represented on the page",
+      "Services are shown as image-led cards with round icon badges",
+      "Footer mirrors the reference site's dark visual weight and multi-column structure",
+      "Mobile navigation is handled with a burger menu"
+    ],
+    "nice_to_have": [
+      "Brand logos create a dedicated proof wall",
+      "Contact section combines tap targets and licensing proof",
+      "Footer retains payments and social cues without feeling overloaded"
+    ]
+  }
+}

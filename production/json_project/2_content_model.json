@@ -1,0 +1,518 @@
+{
+  "page_id": "ricks-ac-homepage",
+  "entities": {
+    "hero": {
+      "entity_type": "section",
+      "purpose": "Present the core value proposition, full-width hero image, and top conversion path.",
+      "fields": {
+        "eyebrow": {
+          "type": "text",
+          "required": true,
+          "editable": true,
+          "default": "Fast, Honest, and Dependable"
+        },
+        "headline": {
+          "type": "text",
+          "required": true,
+          "editable": true,
+          "default": "HVAC service built for real homes, real businesses, and real urgency."
+        },
+        "supporting_text": {
+          "type": "rich_text",
+          "required": true,
+          "editable": true,
+          "default": "Rick's AC Maintenance & Service LLC handles repair, installation, maintenance, and indoor air quality across Hancock County, Mississippi and Louisiana communities with a practical, no-nonsense service approach."
+        },
+        "primary_cta": {
+          "type": "link",
+          "required": true,
+          "editable": true,
+          "default": {
+            "label": "Schedule Service Today",
+            "href": "#contact"
+          }
+        },
+        "secondary_cta": {
+          "type": "link",
+          "required": false,
+          "editable": true,
+          "default": {
+            "label": "Explore Services",
+            "href": "#services"
+          }
+        },
+        "background_image": {
+          "type": "image",
+          "required": true,
+          "editable": true,
+          "default": {
+            "src": "assets/images/Home-hero-background.jpg",
+            "alt": "HVAC outdoor unit near home exterior"
+          }
+        },
+        "brand_logo": {
+          "type": "image",
+          "required": true,
+          "editable": true,
+          "default": {
+            "src": "assets/images/Ricks-logo-white.png",
+            "alt": "Rick's AC Maintenance and Service LLC white logo"
+          }
+        },
+        "metrics": {
+          "type": "repeater",
+          "required": true,
+          "editable": true,
+          "default": [
+            {
+              "title": "18 Years",
+              "description": "Trusted HVAC experience"
+            },
+            {
+              "title": "Licensed",
+              "description": "Louisiana and Mississippi credentials"
+            },
+            {
+              "title": "All Major Brands",
+              "description": "Service, replacement, and maintenance"
+            }
+          ]
+        }
+      }
+    },
+    "trust_badges": {
+      "entity_type": "section",
+      "purpose": "Reinforce trust and coverage with a compact badge strip below the hero.",
+      "fields": {
+        "items": {
+          "type": "repeater",
+          "required": true,
+          "editable": true,
+          "default": [
+            {
+              "badge": "24",
+              "label": "Rapid response for repairs and urgent service"
+            },
+            {
+              "badge": "HV",
+              "label": "Residential, commercial, and new construction"
+            },
+            {
+              "badge": "MS",
+              "label": "Mississippi and Louisiana coverage"
+            },
+            {
+              "badge": "BR",
+              "label": "Support for all major heating and cooling brands"
+            }
+          ]
+        }
+      }
+    },
+    "services_grid": {
+      "entity_type": "section",
+      "purpose": "Show the primary HVAC offers as visual cards with photos and round badge icons.",
+      "fields": {
+        "eyebrow": {
+          "type": "text",
+          "required": true,
+          "editable": true,
+          "default": "Core Services"
+        },
+        "headline": {
+          "type": "text",
+          "required": true,
+          "editable": true,
+          "default": "Service cards with real imagery, clear scope, and direct action."
+        },
+        "intro": {
+          "type": "rich_text",
+          "required": true,
+          "editable": true,
+          "default": "From installations to repairs and preventative maintenance, every service is built around fast response, clear communication, and dependable results."
+        },
+        "services": {
+          "type": "repeater",
+          "required": true,
+          "editable": true,
+          "default": [
+            {
+              "title": "Heating Installation",
+              "description": "New system installations, equipment upgrades, and full replacements planned around efficiency and long-term reliability.",
+              "cta_label": "Request Installation",
+              "cta_href": "#contact",
+              "image": "assets/images/Heating-Installation-Furnace.jpg",
+              "badge_image": "assets/images/Heating-Installation-Icon.png",
+              "badge_label": "Install"
+            },
+            {
+              "title": "AC Installation",
+              "description": "Expert installation for homes, commercial properties, and new construction projects that need dependable cooling performance.",
+              "cta_label": "Book Consultation",
+              "cta_href": "#contact",
+              "image": "assets/images/AC-Installation-2-AC-Units.jpg",
+              "badge_image": "assets/images/AC-Installation-Icon.png",
+              "badge_label": "Cooling"
+            },
+            {
+              "title": "Heating Repair",
+              "description": "Fast troubleshooting and reliable repair work for heating failures, weak airflow, and equipment issues before they escalate.",
+              "cta_label": "Call for Repair",
+              "cta_href": "#contact",
+              "image": "assets/images/Furnace-repair-technician.jpg",
+              "badge_image": "assets/images/Heating-Repair-Icon2.png",
+              "badge_label": "Repair"
+            },
+            {
+              "title": "AC Repair",
+              "description": "Dependable air conditioning repair for breakdowns, poor cooling, strange noises, and performance problems across all major makes.",
+              "cta_label": "Get Service",
+              "cta_href": "#contact",
+              "image": "assets/images/AC-Repair-Technician.jpg",
+              "badge_image": "assets/images/AC-Repair-Icon.png",
+              "badge_label": "Urgent"
+            },
+            {
+              "title": "Heating & AC Maintenance",
+              "description": "Seasonal inspections and preventative maintenance that keep systems efficient and reduce mid-season surprises.",
+              "cta_label": "Schedule Maintenance",
+              "cta_href": "#contact",
+              "image": "assets/images/Heat-Pump-Maintenance.jpg",
+              "badge_image": "assets/images/Heating-AC-Maintenance-Icon.png",
+              "badge_label": "Maintenance"
+            },
+            {
+              "title": "Indoor Air Quality",
+              "description": "Cleaner indoor air through filtration, purification, humidity control, and practical upgrades that improve day-to-day comfort.",
+              "cta_label": "Ask About IAQ",
+              "cta_href": "#contact",
+              "image": "assets/images/changing-air-filter.jpg",
+              "badge_image": "assets/images/Air-Purification-Icon.png",
+              "badge_label": "Air Quality"
+            }
+          ]
+        }
+      }
+    },
+    "about_section": {
+      "entity_type": "section",
+      "purpose": "Explain the company story and reinforce location and coverage with logo support.",
+      "fields": {
+        "eyebrow": {
+          "type": "text",
+          "required": true,
+          "editable": true,
+          "default": "About Rick's AC"
+        },
+        "headline": {
+          "type": "text",
+          "required": true,
+          "editable": true,
+          "default": "Local HVAC support backed by experience, coverage, and dependable service."
+        },
+        "body": {
+          "type": "rich_text",
+          "required": true,
+          "editable": true,
+          "default": "Rick's AC Maintenance & Service LLC puts customer comfort first with practical heating and cooling solutions for homes, businesses, and new construction projects. Our team serves residential, commercial, and new construction clients across Mississippi and Louisiana with installation, repair, maintenance, and indoor air quality services."
+        },
+        "logo_image": {
+          "type": "image",
+          "required": true,
+          "editable": true,
+          "default": {
+            "src": "assets/images/Ricks-logo.png",
+            "alt": "Rick's AC logo"
+          }
+        },
+        "location_card": {
+          "type": "group",
+          "required": true,
+          "editable": true,
+          "default": {
+            "title": "Louisiana Office",
+            "body": "PO Box 213, Violet, LA 70092"
+          }
+        },
+        "coverage_card": {
+          "type": "group",
+          "required": true,
+          "editable": true,
+          "default": {
+            "title": "Coverage",
+            "body": "Hancock County, Jefferson Parish, Jefferson Davis, Kenner, Slidell, Covington"
+          }
+        }
+      }
+    },
+    "brands_strip": {
+      "entity_type": "section",
+      "purpose": "Display supported HVAC brands as a high-trust logo wall.",
+      "fields": {
+        "eyebrow": {
+          "type": "text",
+          "required": true,
+          "editable": true,
+          "default": "Brand Support"
+        },
+        "headline": {
+          "type": "text",
+          "required": true,
+          "editable": true,
+          "default": "Service all makes and models with a real logo wall."
+        },
+        "intro": {
+          "type": "rich_text",
+          "required": true,
+          "editable": true,
+          "default": "We service the equipment brands customers already rely on, making it easier to maintain, repair, or replace systems without guesswork."
+        },
+        "brands": {
+          "type": "repeater",
+          "required": true,
+          "editable": true,
+          "default": [
+            {
+              "name": "Lennox",
+              "logo": "assets/images/Lennox-Logo.jpg"
+            },
+            {
+              "name": "Amana",
+              "logo": "assets/images/Amana-Logo.jpg"
+            },
+            {
+              "name": "American Standard",
+              "logo": "assets/images/American-Standard-logo.jpg"
+            },
+            {
+              "name": "Carrier",
+              "logo": "assets/images/Carrier-logo.jpg"
+            },
+            {
+              "name": "Goodman",
+              "logo": "assets/images/Goodman-logo.jpg"
+            },
+            {
+              "name": "Trane",
+              "logo": "assets/images/Trane-logo.jpg"
+            },
+            {
+              "name": "Bryant",
+              "logo": "assets/images/Bryant-logo.jpg"
+            },
+            {
+              "name": "Heil",
+              "logo": "assets/images/Heil-Logo.jpg"
+            }
+          ]
+        }
+      }
+    },
+    "cta_banner": {
+      "entity_type": "section",
+      "purpose": "Deliver a focused conversion moment between proof content and contact details.",
+      "fields": {
+        "eyebrow": {
+          "type": "text",
+          "required": true,
+          "editable": true,
+          "default": "Ready To Book"
+        },
+        "headline": {
+          "type": "text",
+          "required": true,
+          "editable": true,
+          "default": "Your comfort starts here."
+        },
+        "body": {
+          "type": "rich_text",
+          "required": true,
+          "editable": true,
+          "default": "Whether you need a repair right now, a full system replacement, or scheduled maintenance, our team is ready to help you move forward quickly."
+        },
+        "primary_cta": {
+          "type": "link",
+          "required": true,
+          "editable": true,
+          "default": {
+            "label": "Contact Us to Schedule Service",
+            "href": "#contact"
+          }
+        }
+      }
+    },
+    "contact_info": {
+      "entity_type": "section",
+      "purpose": "Present direct contact actions and licensing proof in one block.",
+      "fields": {
+        "eyebrow": {
+          "type": "text",
+          "required": true,
+          "editable": true,
+          "default": "Contact"
+        },
+        "headline": {
+          "type": "text",
+          "required": true,
+          "editable": true,
+          "default": "Direct contact details stay visible and easy to tap."
+        },
+        "phones": {
+          "type": "repeater",
+          "required": true,
+          "editable": true,
+          "default": [
+            {
+              "label": "Louisiana Phone",
+              "number": "504-582-5111",
+              "href": "tel:5045825111"
+            },
+            {
+              "label": "Mississippi Phone",
+              "number": "228-344-8626",
+              "href": "tel:2283448626"
+            }
+          ]
+        },
+        "email": {
+          "type": "link",
+          "required": true,
+          "editable": true,
+          "default": {
+            "label": "service@ricksacllc.com",
+            "href": "mailto:service@ricksacllc.com"
+          }
+        },
+        "address": {
+          "type": "rich_text",
+          "required": true,
+          "editable": true,
+          "default": "PO Box 213, Violet, LA 70092"
+        },
+        "licenses": {
+          "type": "repeater",
+          "required": true,
+          "editable": true,
+          "default": [
+            {
+              "label": "State License Louisiana",
+              "value": "#46521"
+            },
+            {
+              "label": "State License Mississippi",
+              "value": "#R20056"
+            },
+            {
+              "label": "Master Natural Gas Fitter",
+              "value": "#MNGF10789"
+            }
+          ]
+        }
+      }
+    },
+    "footer": {
+      "entity_type": "section",
+      "purpose": "Close the page with service links, company links, payments, social proof, and legal text.",
+      "fields": {
+        "brand_logo": {
+          "type": "image",
+          "required": true,
+          "editable": true,
+          "default": {
+            "src": "assets/images/Ricks-logo-white.png",
+            "alt": "Rick's AC white logo"
+          }
+        },
+        "summary": {
+          "type": "rich_text",
+          "required": true,
+          "editable": true,
+          "default": "Fast, honest, and dependable HVAC service for homes and businesses in Hancock County, Mississippi and Louisiana communities."
+        },
+        "services_links": {
+          "type": "repeater",
+          "required": true,
+          "editable": true,
+          "default": [
+            {
+              "label": "Heating Installation",
+              "href": "#services"
+            },
+            {
+              "label": "AC Installation",
+              "href": "#services"
+            },
+            {
+              "label": "Heating Repair",
+              "href": "#services"
+            },
+            {
+              "label": "AC Repair",
+              "href": "#services"
+            },
+            {
+              "label": "Maintenance",
+              "href": "#services"
+            },
+            {
+              "label": "Indoor Air Quality",
+              "href": "#services"
+            }
+          ]
+        },
+        "company_links": {
+          "type": "repeater",
+          "required": true,
+          "editable": true,
+          "default": [
+            {
+              "label": "About",
+              "href": "#about"
+            },
+            {
+              "label": "Brands",
+              "href": "#brands"
+            },
+            {
+              "label": "Contact",
+              "href": "#contact"
+            },
+            {
+              "label": "LA: 504-582-5111",
+              "href": "tel:5045825111"
+            },
+            {
+              "label": "MS: 228-344-8626",
+              "href": "tel:2283448626"
+            }
+          ]
+        },
+        "social_icon": {
+          "type": "image_link",
+          "required": true,
+          "editable": true,
+          "default": {
+            "src": "assets/images/Facebook.png",
+            "alt": "Facebook",
+            "href": "https://facebook.com"
+          }
+        },
+        "payment_image": {
+          "type": "image",
+          "required": true,
+          "editable": true,
+          "default": {
+            "src": "assets/images/payment-cards2.png",
+            "alt": "Accepted payment cards"
+          }
+        },
+        "legal_text": {
+          "type": "text",
+          "required": true,
+          "editable": true,
+          "default": "LA #46521 · MS #R20056 · MNGF #MNGF10789"
+        }
+      }
+    }
+  }
+}

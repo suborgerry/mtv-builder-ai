@@ -1,0 +1,117 @@
+{
+  "page_id": "ricks-ac-homepage",
+  "sections": [
+    {
+      "section_id": "hero",
+      "section_type": "hero",
+      "data_source": {
+        "entity_ref": "hero",
+        "acf_group_ref": "group_hero"
+      },
+      "variant": "full-bleed-background",
+      "theme": "brand-primary",
+      "wrapper": {
+        "tag": "section",
+        "classes": "relative isolate overflow-hidden bg-[#0E2741] text-white"
+      }
+    },
+    {
+      "section_id": "trust_badges",
+      "section_type": "trust_badges",
+      "data_source": {
+        "entity_ref": "trust_badges",
+        "acf_group_ref": "group_trust_badges"
+      },
+      "variant": "inline-badge-strip",
+      "theme": "accent-strip",
+      "wrapper": {
+        "tag": "section",
+        "classes": "bg-[#E46C2E] text-white"
+      }
+    },
+    {
+      "section_id": "services",
+      "section_type": "services_grid",
+      "data_source": {
+        "entity_ref": "services_grid",
+        "acf_group_ref": "group_services_grid"
+      },
+      "variant": "image-card-grid",
+      "theme": "neutral-surface",
+      "wrapper": {
+        "tag": "section",
+        "classes": "bg-[#F5F7FA] text-[#0B1622]"
+      }
+    },
+    {
+      "section_id": "about",
+      "section_type": "about_section",
+      "data_source": {
+        "entity_ref": "about_section",
+        "acf_group_ref": "group_about_section"
+      },
+      "variant": "split-logo-copy",
+      "theme": "light-surface",
+      "wrapper": {
+        "tag": "section",
+        "classes": "bg-white text-[#0B1622]"
+      }
+    },
+    {
+      "section_id": "brands",
+      "section_type": "brands_strip",
+      "data_source": {
+        "entity_ref": "brands_strip",
+        "acf_group_ref": "group_brands_strip"
+      },
+      "variant": "logo-wall",
+      "theme": "brand-dark",
+      "wrapper": {
+        "tag": "section",
+        "classes": "bg-[#0E2741] text-white"
+      }
+    },
+    {
+      "section_id": "final_cta",
+      "section_type": "cta_banner",
+      "data_source": {
+        "entity_ref": "cta_banner",
+        "acf_group_ref": "group_cta_banner"
+      },
+      "variant": "centered-banner",
+      "theme": "accent-cta",
+      "wrapper": {
+        "tag": "section",
+        "classes": "bg-[#E46C2E] text-white"
+      }
+    },
+    {
+      "section_id": "contact",
+      "section_type": "contact_info",
+      "data_source": {
+        "entity_ref": "contact_info",
+        "acf_group_ref": "group_contact_info"
+      },
+      "variant": "split-contact-proof",
+      "theme": "light-surface",
+      "wrapper": {
+        "tag": "section",
+        "classes": "bg-white text-[#0B1622]"
+      }
+    },
+    {
+      "section_id": "footer",
+      "section_type": "footer",
+      "data_source": {
+        "entity_ref": "footer",
+        "acf_group_ref": "group_footer"
+      },
+      "variant": "multi-column-footer",
+      "theme": "footer-dark",
+      "wrapper": {
+        "tag": "footer",
+        "classes": "bg-[#08192A] text-white"
+      }
+    }
+  ]
+}

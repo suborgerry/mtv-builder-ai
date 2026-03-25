@@ -1,0 +1,309 @@
+{
+  "registry_version": "2.0.0",
+  "sections": {
+    "hero": {
+      "label": "Hero",
+      "purpose": "Lead with a full-banner image, service promise, and primary CTA.",
+      "category": "intro",
+      "allowed_page_types": [
+        "local_service_homepage"
+      ],
+      "content_entity_ref": "hero",
+      "template": {
+        "path": "index.html#hero",
+        "render_engine": "html",
+        "partial_name": "hero"
+      },
+      "acf": {
+        "group_key": "group_hero",
+        "group_name": "Hero"
+      },
+      "variants": [
+        "full-bleed-background"
+      ],
+      "themes": [
+        "brand-primary"
+      ],
+      "constraints": {
+        "max_instances_per_page": 1,
+        "requires_fields": [
+          "headline",
+          "supporting_text",
+          "primary_cta",
+          "background_image"
+        ]
+      },
+      "performance": {
+        "weight": "high",
+        "heavy_media": true,
+        "interactive": false
+      }
+    },
+    "trust_badges": {
+      "label": "Trust Badges",
+      "purpose": "Provide a compact badge strip with trust and coverage cues.",
+      "category": "proof",
+      "allowed_page_types": [
+        "local_service_homepage"
+      ],
+      "content_entity_ref": "trust_badges",
+      "template": {
+        "path": "index.html#trust-badges",
+        "render_engine": "html",
+        "partial_name": "trust-badges"
+      },
+      "acf": {
+        "group_key": "group_trust_badges",
+        "group_name": "Trust Badges"
+      },
+      "variants": [
+        "inline-badge-strip"
+      ],
+      "themes": [
+        "accent-strip"
+      ],
+      "constraints": {
+        "max_instances_per_page": 1,
+        "min_items": 4,
+        "max_items": 4,
+        "requires_fields": [
+          "items"
+        ]
+      },
+      "performance": {
+        "weight": "light",
+        "heavy_media": false,
+        "interactive": false
+      }
+    },
+    "services_grid": {
+      "label": "Services Grid",
+      "purpose": "Present the main HVAC services as image-led cards with round icon badges.",
+      "category": "content",
+      "allowed_page_types": [
+        "local_service_homepage"
+      ],
+      "content_entity_ref": "services_grid",
+      "template": {
+        "path": "index.html#services",
+        "render_engine": "html",
+        "partial_name": "services-grid"
+      },
+      "acf": {
+        "group_key": "group_services_grid",
+        "group_name": "Services Grid"
+      },
+      "variants": [
+        "image-card-grid"
+      ],
+      "themes": [
+        "neutral-surface"
+      ],
+      "constraints": {
+        "max_instances_per_page": 1,
+        "min_items": 6,
+        "max_items": 6,
+        "requires_fields": [
+          "headline",
+          "intro",
+          "services"
+        ]
+      },
+      "performance": {
+        "weight": "high",
+        "heavy_media": true,
+        "interactive": false
+      }
+    },
+    "about_section": {
+      "label": "About Section",
+      "purpose": "Summarize the company with local credibility and logo support.",
+      "category": "content",
+      "allowed_page_types": [
+        "local_service_homepage"
+      ],
+      "content_entity_ref": "about_section",
+      "template": {
+        "path": "index.html#about",
+        "render_engine": "html",
+        "partial_name": "about-section"
+      },
+      "acf": {
+        "group_key": "group_about_section",
+        "group_name": "About Section"
+      },
+      "variants": [
+        "split-logo-copy"
+      ],
+      "themes": [
+        "light-surface"
+      ],
+      "constraints": {
+        "max_instances_per_page": 1,
+        "requires_fields": [
+          "headline",
+          "body",
+          "logo_image"
+        ]
+      },
+      "performance": {
+        "weight": "medium",
+        "heavy_media": false,
+        "interactive": false
+      }
+    },
+    "brands_strip": {
+      "label": "Brands Strip",
+      "purpose": "Display all supported manufacturers in a dark logo wall.",
+      "category": "proof",
+      "allowed_page_types": [
+        "local_service_homepage"
+      ],
+      "content_entity_ref": "brands_strip",
+      "template": {
+        "path": "index.html#brands",
+        "render_engine": "html",
+        "partial_name": "brands-strip"
+      },
+      "acf": {
+        "group_key": "group_brands_strip",
+        "group_name": "Brands Strip"
+      },
+      "variants": [
+        "logo-wall"
+      ],
+      "themes": [
+        "brand-dark"
+      ],
+      "constraints": {
+        "max_instances_per_page": 1,
+        "min_items": 8,
+        "max_items": 8,
+        "requires_fields": [
+          "headline",
+          "brands"
+        ]
+      },
+      "performance": {
+        "weight": "medium",
+        "heavy_media": false,
+        "interactive": false
+      }
+    },
+    "cta_banner": {
+      "label": "CTA Banner",
+      "purpose": "Reinforce urgency with a high-contrast banner and one primary CTA.",
+      "category": "conversion",
+      "allowed_page_types": [
+        "local_service_homepage"
+      ],
+      "content_entity_ref": "cta_banner",
+      "template": {
+        "path": "index.html#final-cta",
+        "render_engine": "html",
+        "partial_name": "cta-banner"
+      },
+      "acf": {
+        "group_key": "group_cta_banner",
+        "group_name": "CTA Banner"
+      },
+      "variants": [
+        "centered-banner"
+      ],
+      "themes": [
+        "accent-cta"
+      ],
+      "constraints": {
+        "max_instances_per_page": 1,
+        "requires_fields": [
+          "headline",
+          "body",
+          "primary_cta"
+        ]
+      },
+      "performance": {
+        "weight": "light",
+        "heavy_media": false,
+        "interactive": false
+      }
+    },
+    "contact_info": {
+      "label": "Contact Info",
+      "purpose": "Provide large tap-friendly contact cards alongside licensing proof.",
+      "category": "conversion",
+      "allowed_page_types": [
+        "local_service_homepage"
+      ],
+      "content_entity_ref": "contact_info",
+      "template": {
+        "path": "index.html#contact",
+        "render_engine": "html",
+        "partial_name": "contact-info"
+      },
+      "acf": {
+        "group_key": "group_contact_info",
+        "group_name": "Contact Info"
+      },
+      "variants": [
+        "split-contact-proof"
+      ],
+      "themes": [
+        "light-surface"
+      ],
+      "constraints": {
+        "max_instances_per_page": 1,
+        "requires_fields": [
+          "headline",
+          "phones",
+          "email",
+          "address",
+          "licenses"
+        ]
+      },
+      "performance": {
+        "weight": "medium",
+        "heavy_media": false,
+        "interactive": false
+      }
+    },
+    "footer": {
+      "label": "Footer",
+      "purpose": "Close with dark-site navigation, payments, social icon, and legal content.",
+      "category": "footer",
+      "allowed_page_types": [
+        "local_service_homepage"
+      ],
+      "content_entity_ref": "footer",
+      "template": {
+        "path": "index.html#footer",
+        "render_engine": "html",
+        "partial_name": "footer"
+      },
+      "acf": {
+        "group_key": "group_footer",
+        "group_name": "Footer"
+      },
+      "variants": [
+        "multi-column-footer"
+      ],
+      "themes": [
+        "footer-dark"
+      ],
+      "constraints": {
+        "max_instances_per_page": 1,
+        "requires_fields": [
+          "brand_logo",
+          "services_links",
+          "company_links",
+          "payment_image",
+          "legal_text"
+        ]
+      },
+      "performance": {
+        "weight": "medium",
+        "heavy_media": false,
+        "interactive": false
+      }
+    }
+  }
+}

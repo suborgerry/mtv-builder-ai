@@ -1,0 +1,69 @@
+{
+  "page_id": "ricks-ac-homepage",
+  "theme_id": "ricks-ac-dark-orange-2026",
+  "theme_name": "Rick's AC Dark Orange 2026",
+  "theme_strategy": "Dark blue local-service presentation with orange CTA emphasis, white contrast blocks, and image-led trust proof.",
+  "palette": {
+    "primary_blue": "#0E2741",
+    "primary_blue_dark": "#0A1D31",
+    "footer_blue_dark": "#08192A",
+    "accent_orange": "#E46C2E",
+    "accent_orange_dark": "#C85B24",
+    "surface_light": "#F5F7FA",
+    "surface_white": "#FFFFFF",
+    "text_dark": "#0B1622",
+    "text_muted": "#53657A",
+    "border_light": "#D8E0E8"
+  },
+  "section_themes": {
+    "brand-primary": {
+      "background": "#0E2741",
+      "foreground": "#FFFFFF",
+      "accent": "#E46C2E"
+    },
+    "accent-strip": {
+      "background": "#E46C2E",
+      "foreground": "#FFFFFF",
+      "accent": "#FFFFFF"
+    },
+    "neutral-surface": {
+      "background": "#F5F7FA",
+      "foreground": "#0B1622",
+      "accent": "#E46C2E"
+    },
+    "light-surface": {
+      "background": "#FFFFFF",
+      "foreground": "#0B1622",
+      "accent": "#0E2741"
+    },
+    "brand-dark": {
+      "background": "#0E2741",
+      "foreground": "#FFFFFF",
+      "accent": "#F5B086"
+    },
+    "accent-cta": {
+      "background": "#E46C2E",
+      "foreground": "#FFFFFF",
+      "accent": "#FFFFFF"
+    },
+    "footer-dark": {
+      "background": "#08192A",
+      "foreground": "#FFFFFF",
+      "accent": "#E46C2E"
+    }
+  },
+  "typography": {
+    "style_direction": "Bold, high-contrast service-brand typography with black-weight headlines and practical body copy.",
+    "heading_scale": "3xl_to_7xl",
+    "body_scale": "sm_to_lg",
+    "font_mood": "confident_practical"
+  },
+  "imagery": {
+    "style": "Real HVAC service photography, logo assets, payment marks, and brand logos used as proof.",
+    "preferred_assets": [
+      "assets/images/Home-hero-background.jpg",
+      "assets/images/Ricks-logo.png",
+      "assets/images/Ricks-logo-white.png"
+    ]
+  }
+}

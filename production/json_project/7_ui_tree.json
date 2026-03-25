@@ -1,0 +1,321 @@
+{
+  "page_id": "ricks-ac-homepage",
+  "sections": [
+    {
+      "id": "hero",
+      "section_type": "hero",
+      "tree": {
+        "node_type": "section",
+        "name": "Hero",
+        "children": [
+          {
+            "node_type": "media",
+            "name": "background_image",
+            "fields": [
+              "background_image"
+            ],
+            "children": []
+          },
+          {
+            "node_type": "content",
+            "name": "hero_copy",
+            "fields": [
+              "eyebrow",
+              "headline",
+              "supporting_text"
+            ],
+            "children": []
+          },
+          {
+            "node_type": "group",
+            "name": "hero_actions",
+            "fields": [
+              "primary_cta",
+              "secondary_cta"
+            ],
+            "children": []
+          },
+          {
+            "node_type": "repeater",
+            "name": "hero_metrics",
+            "fields": [
+              "metrics"
+            ],
+            "children": []
+          },
+          {
+            "node_type": "media",
+            "name": "hero_logo_panel",
+            "fields": [
+              "brand_logo"
+            ],
+            "children": []
+          }
+        ]
+      }
+    },
+    {
+      "id": "trust_badges",
+      "section_type": "trust_badges",
+      "tree": {
+        "node_type": "section",
+        "name": "Trust Badges",
+        "children": [
+          {
+            "node_type": "repeater",
+            "name": "badge_items",
+            "fields": [
+              "items"
+            ],
+            "children": [
+              {
+                "node_type": "item",
+                "name": "badge_item",
+                "fields": [
+                  "badge",
+                  "label"
+                ],
+                "children": []
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "services",
+      "section_type": "services_grid",
+      "tree": {
+        "node_type": "section",
+        "name": "Services Grid",
+        "children": [
+          {
+            "node_type": "content",
+            "name": "services_heading",
+            "fields": [
+              "eyebrow",
+              "headline",
+              "intro"
+            ],
+            "children": []
+          },
+          {
+            "node_type": "repeater",
+            "name": "service_cards",
+            "fields": [
+              "services"
+            ],
+            "children": [
+              {
+                "node_type": "item",
+                "name": "service_card",
+                "fields": [
+                  "title",
+                  "description",
+                  "cta_label",
+                  "cta_href",
+                  "image",
+                  "badge_image",
+                  "badge_label"
+                ],
+                "children": []
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "about",
+      "section_type": "about_section",
+      "tree": {
+        "node_type": "section",
+        "name": "About Section",
+        "children": [
+          {
+            "node_type": "media",
+            "name": "about_logo",
+            "fields": [
+              "logo_image"
+            ],
+            "children": []
+          },
+          {
+            "node_type": "content",
+            "name": "about_copy",
+            "fields": [
+              "eyebrow",
+              "headline",
+              "body"
+            ],
+            "children": []
+          },
+          {
+            "node_type": "group",
+            "name": "about_cards",
+            "fields": [
+              "location_card",
+              "coverage_card"
+            ],
+            "children": []
+          }
+        ]
+      }
+    },
+    {
+      "id": "brands",
+      "section_type": "brands_strip",
+      "tree": {
+        "node_type": "section",
+        "name": "Brands Strip",
+        "children": [
+          {
+            "node_type": "content",
+            "name": "brands_heading",
+            "fields": [
+              "eyebrow",
+              "headline",
+              "intro"
+            ],
+            "children": []
+          },
+          {
+            "node_type": "repeater",
+            "name": "brand_tiles",
+            "fields": [
+              "brands"
+            ],
+            "children": [
+              {
+                "node_type": "item",
+                "name": "brand_tile",
+                "fields": [
+                  "name",
+                  "logo"
+                ],
+                "children": []
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "final_cta",
+      "section_type": "cta_banner",
+      "tree": {
+        "node_type": "section",
+        "name": "CTA Banner",
+        "children": [
+          {
+            "node_type": "content",
+            "name": "cta_copy",
+            "fields": [
+              "eyebrow",
+              "headline",
+              "body"
+            ],
+            "children": []
+          },
+          {
+            "node_type": "group",
+            "name": "cta_action",
+            "fields": [
+              "primary_cta"
+            ],
+            "children": []
+          }
+        ]
+      }
+    },
+    {
+      "id": "contact",
+      "section_type": "contact_info",
+      "tree": {
+        "node_type": "section",
+        "name": "Contact Info",
+        "children": [
+          {
+            "node_type": "content",
+            "name": "contact_heading",
+            "fields": [
+              "eyebrow",
+              "headline"
+            ],
+            "children": []
+          },
+          {
+            "node_type": "repeater",
+            "name": "phones",
+            "fields": [
+              "phones"
+            ],
+            "children": []
+          },
+          {
+            "node_type": "group",
+            "name": "email_address",
+            "fields": [
+              "email",
+              "address"
+            ],
+            "children": []
+          },
+          {
+            "node_type": "repeater",
+            "name": "licenses",
+            "fields": [
+              "licenses"
+            ],
+            "children": []
+          }
+        ]
+      }
+    },
+    {
+      "id": "footer",
+      "section_type": "footer",
+      "tree": {
+        "node_type": "section",
+        "name": "Footer",
+        "children": [
+          {
+            "node_type": "media",
+            "name": "footer_brand",
+            "fields": [
+              "brand_logo",
+              "social_icon",
+              "payment_image"
+            ],
+            "children": []
+          },
+          {
+            "node_type": "repeater",
+            "name": "footer_services_links",
+            "fields": [
+              "services_links"
+            ],
+            "children": []
+          },
+          {
+            "node_type": "repeater",
+            "name": "footer_company_links",
+            "fields": [
+              "company_links"
+            ],
+            "children": []
+          },
+          {
+            "node_type": "content",
+            "name": "footer_legal",
+            "fields": [
+              "summary",
+              "legal_text"
+            ],
+            "children": []
+          }
+        ]
+      }
+    }
+  ]
+}

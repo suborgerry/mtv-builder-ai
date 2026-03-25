@@ -1,0 +1,77 @@
+{
+  "page_id": "ricks-ac-homepage",
+  "sections": [
+    {
+      "id": "hero",
+      "section_type": "hero",
+      "variant": "full-bleed-background",
+      "theme": "brand-primary",
+      "layout_density": "spacious",
+      "visual_priority": "highest",
+      "notes": "Large background image with overlay, logo panel, metrics, and dual CTA."
+    },
+    {
+      "id": "trust_badges",
+      "section_type": "trust_badges",
+      "variant": "inline-badge-strip",
+      "theme": "accent-strip",
+      "layout_density": "compact",
+      "visual_priority": "high",
+      "notes": "Orange strip with circular badge tokens and short trust messages."
+    },
+    {
+      "id": "services",
+      "section_type": "services_grid",
+      "variant": "image-card-grid",
+      "theme": "neutral-surface",
+      "layout_density": "comfortable",
+      "visual_priority": "highest",
+      "notes": "Six cards with service imagery, corner labels, and round icon badges."
+    },
+    {
+      "id": "about",
+      "section_type": "about_section",
+      "variant": "split-logo-copy",
+      "theme": "light-surface",
+      "layout_density": "comfortable",
+      "visual_priority": "medium",
+      "notes": "Logo card on the left and company copy with two supporting info cards."
+    },
+    {
+      "id": "brands",
+      "section_type": "brands_strip",
+      "variant": "logo-wall",
+      "theme": "brand-dark",
+      "layout_density": "comfortable",
+      "visual_priority": "high",
+      "notes": "Dark section with eight logo tiles."
+    },
+    {
+      "id": "final_cta",
+      "section_type": "cta_banner",
+      "variant": "centered-banner",
+      "theme": "accent-cta",
+      "layout_density": "comfortable",
+      "visual_priority": "high",
+      "notes": "Simple orange conversion band with one white CTA."
+    },
+    {
+      "id": "contact",
+      "section_type": "contact_info",
+      "variant": "split-contact-proof",
+      "theme": "light-surface",
+      "layout_density": "comfortable",
+      "visual_priority": "high",
+      "notes": "Contact cards on the left and dark licensing proof card on the right."
+    },
+    {
+      "id": "footer",
+      "section_type": "footer",
+      "variant": "multi-column-footer",
+      "theme": "footer-dark",
+      "layout_density": "comfortable",
+      "visual_priority": "medium",
+      "notes": "Dark multi-column footer with services, company links, payments, and social."
+    }
+  ]
+}

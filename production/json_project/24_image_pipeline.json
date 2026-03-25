@@ -1,0 +1,88 @@
+{
+  "page_id": "ricks-ac-homepage",
+  "global_rules": {
+    "hero_priority": "high",
+    "hero_lazy_loading": false,
+    "other_images_lazy_loading": true,
+    "require_width_height": true,
+    "require_responsive_derivatives": true,
+    "allowed_formats": [
+      "avif",
+      "webp",
+      "jpg",
+      "png"
+    ]
+  },
+  "sections": [
+    {
+      "section_id": "hero",
+      "assets": [
+        {
+          "asset_id": "hero_background",
+          "source_path": "assets/images/Home-hero-background.jpg",
+          "role": "hero_image",
+          "priority": "high",
+          "lazy_load": false
+        },
+        {
+          "asset_id": "hero_logo_white",
+          "source_path": "assets/images/Ricks-logo-white.png",
+          "role": "hero_logo",
+          "priority": "medium",
+          "lazy_load": true
+        },
+        {
+          "asset_id": "header_logo",
+          "source_path": "assets/images/Ricks-logo.png",
+          "role": "header_logo",
+          "priority": "medium",
+          "lazy_load": true
+        }
+      ]
+    },
+    {
+      "section_id": "services",
+      "assets": [
+        "assets/images/Heating-Installation-Furnace.jpg",
+        "assets/images/Heating-Installation-Icon.png",
+        "assets/images/AC-Installation-2-AC-Units.jpg",
+        "assets/images/AC-Installation-Icon.png",
+        "assets/images/Furnace-repair-technician.jpg",
+        "assets/images/Heating-Repair-Icon2.png",
+        "assets/images/AC-Repair-Technician.jpg",
+        "assets/images/AC-Repair-Icon.png",
+        "assets/images/Heat-Pump-Maintenance.jpg",
+        "assets/images/Heating-AC-Maintenance-Icon.png",
+        "assets/images/changing-air-filter.jpg",
+        "assets/images/Air-Purification-Icon.png"
+      ]
+    },
+    {
+      "section_id": "about",
+      "assets": [
+        "assets/images/Ricks-logo.png"
+      ]
+    },
+    {
+      "section_id": "brands",
+      "assets": [
+        "assets/images/Lennox-Logo.jpg",
+        "assets/images/Amana-Logo.jpg",
+        "assets/images/American-Standard-logo.jpg",
+        "assets/images/Carrier-logo.jpg",
+        "assets/images/Goodman-logo.jpg",
+        "assets/images/Trane-logo.jpg",
+        "assets/images/Bryant-logo.jpg",
+        "assets/images/Heil-Logo.jpg"
+      ]
+    },
+    {
+      "section_id": "footer",
+      "assets": [
+        "assets/images/Ricks-logo-white.png",
+        "assets/images/Facebook.png",
+        "assets/images/payment-cards2.png"
+      ]
+    }
+  ]
+}

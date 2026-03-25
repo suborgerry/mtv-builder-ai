@@ -1,0 +1,24 @@
+{
+  "page_id": "ricks-ac-homepage",
+  "score_version": "2.0.0",
+  "scores": {
+    "clarity": 95,
+    "hierarchy": 94,
+    "cta_visibility": 95,
+    "proof_presence": 96,
+    "visual_rhythm": 93,
+    "redundancy": 91,
+    "performance_risk": 84,
+    "editability": 92,
+    "mobile_readiness": 95
+  },
+  "weighted_total": 93,
+  "threshold": 75,
+  "passed": true,
+  "issues": [],
+  "recommendations": [
+    "Keep the hero image optimized because it is the LCP candidate.",
+    "Preserve the service card count and visual density unless image payloads are re-optimized.",
+    "Keep footer columns concise so the mobile menu remains the primary navigation aid on small screens."
+  ]
+}

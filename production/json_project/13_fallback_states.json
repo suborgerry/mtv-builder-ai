@@ -1,0 +1,51 @@
+{
+  "page_id": "ricks-ac-homepage",
+  "global_fallbacks": {
+    "missing_image": {
+      "behavior": "use_brand_safe_local_fallback",
+      "replacement": "assets/images/Ricks-logo.png"
+    },
+    "missing_alt": {
+      "behavior": "use_brand_name",
+      "replacement": "Rick's AC Maintenance & Service LLC"
+    },
+    "missing_link": {
+      "behavior": "hide",
+      "replacement": null
+    }
+  },
+  "section_fallbacks": {
+    "hero": {
+      "layout_fallback_variant": "full-bleed-background"
+    },
+    "trust_badges": {
+      "layout_fallback_variant": "inline-badge-strip"
+    },
+    "services": {
+      "layout_fallback_variant": "image-card-grid"
+    },
+    "about": {
+      "layout_fallback_variant": "split-logo-copy"
+    },
+    "brands": {
+      "layout_fallback_variant": "logo-wall"
+    },
+    "final_cta": {
+      "layout_fallback_variant": "centered-banner"
+    },
+    "contact": {
+      "layout_fallback_variant": "split-contact-proof"
+    },
+    "footer": {
+      "layout_fallback_variant": "multi-column-footer"
+    }
+  },
+  "image_fallbacks": {
+    "decorative_badge_images": {
+      "behavior": "hide_if_missing"
+    },
+    "brand_logo_missing": {
+      "behavior": "fallback_to_text_logo"
+    }
+  }
+}

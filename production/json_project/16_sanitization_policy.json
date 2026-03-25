@@ -1,0 +1,64 @@
+{
+  "policy_version": "2.0.0",
+  "global_rules": {
+    "text": "esc_html",
+    "rich_text": "safe_html",
+    "url": "esc_url",
+    "attribute": "esc_attr",
+    "image_alt": "esc_attr",
+    "html_fragment": "safe_html"
+  },
+  "field_rules": {
+    "eyebrow": {
+      "sanitize_with": "esc_html"
+    },
+    "headline": {
+      "sanitize_with": "esc_html"
+    },
+    "supporting_text": {
+      "sanitize_with": "safe_html"
+    },
+    "intro": {
+      "sanitize_with": "safe_html"
+    },
+    "body": {
+      "sanitize_with": "safe_html"
+    },
+    "primary_cta.label": {
+      "sanitize_with": "esc_html"
+    },
+    "primary_cta.href": {
+      "sanitize_with": "esc_url"
+    },
+    "secondary_cta.label": {
+      "sanitize_with": "esc_html"
+    },
+    "secondary_cta.href": {
+      "sanitize_with": "esc_url"
+    },
+    "email.label": {
+      "sanitize_with": "esc_html"
+    },
+    "email.href": {
+      "sanitize_with": "esc_url"
+    },
+    "phones.number": {
+      "sanitize_with": "esc_html"
+    },
+    "phones.href": {
+      "sanitize_with": "esc_url"
+    },
+    "services.cta_label": {
+      "sanitize_with": "esc_html"
+    },
+    "services.cta_href": {
+      "sanitize_with": "esc_url"
+    },
+    "summary": {
+      "sanitize_with": "safe_html"
+    },
+    "legal_text": {
+      "sanitize_with": "esc_html"
+    }
+  }
+}

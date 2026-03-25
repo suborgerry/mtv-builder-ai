@@ -1,0 +1,118 @@
+{
+  "page_id": "ricks-ac-homepage",
+  "global_edit_policy": {
+    "allow_text_editing": true,
+    "allow_media_editing": true,
+    "allow_link_editing": true,
+    "allow_layout_editing": false,
+    "allow_spacing_editing": false,
+    "allow_grid_editing": false,
+    "allow_free_theme_switching": false
+  },
+  "section_edit_rules": {
+    "hero": {
+      "editable_fields": [
+        "eyebrow",
+        "headline",
+        "supporting_text",
+        "primary_cta",
+        "secondary_cta",
+        "background_image",
+        "brand_logo",
+        "metrics"
+      ],
+      "locked_options": [
+        "variant",
+        "theme"
+      ]
+    },
+    "trust_badges": {
+      "editable_fields": [
+        "items"
+      ],
+      "locked_options": [
+        "variant",
+        "theme"
+      ]
+    },
+    "services": {
+      "editable_fields": [
+        "eyebrow",
+        "headline",
+        "intro",
+        "services"
+      ],
+      "locked_options": [
+        "variant",
+        "theme"
+      ]
+    },
+    "about": {
+      "editable_fields": [
+        "eyebrow",
+        "headline",
+        "body",
+        "logo_image",
+        "location_card",
+        "coverage_card"
+      ],
+      "locked_options": [
+        "variant",
+        "theme"
+      ]
+    },
+    "brands": {
+      "editable_fields": [
+        "eyebrow",
+        "headline",
+        "intro",
+        "brands"
+      ],
+      "locked_options": [
+        "variant",
+        "theme"
+      ]
+    },
+    "final_cta": {
+      "editable_fields": [
+        "eyebrow",
+        "headline",
+        "body",
+        "primary_cta"
+      ],
+      "locked_options": [
+        "variant",
+        "theme"
+      ]
+    },
+    "contact": {
+      "editable_fields": [
+        "eyebrow",
+        "headline",
+        "phones",
+        "email",
+        "address",
+        "licenses"
+      ],
+      "locked_options": [
+        "variant",
+        "theme"
+      ]
+    },
+    "footer": {
+      "editable_fields": [
+        "brand_logo",
+        "summary",
+        "services_links",
+        "company_links",
+        "social_icon",
+        "payment_image",
+        "legal_text"
+      ],
+      "locked_options": [
+        "variant",
+        "theme"
+      ]
+    }
+  }
+}

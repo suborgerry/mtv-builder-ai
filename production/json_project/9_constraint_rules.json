@@ -1,0 +1,130 @@
+{
+  "rules_version": "2.0.0",
+  "global_rules": {
+    "max_primary_cta_above_fold": 1,
+    "max_cta_per_section": 2,
+    "max_cta_per_screen": 3,
+    "allow_adjacent_same_visual_weight": false,
+    "allow_duplicate_section_types": false
+  },
+  "section_rules": {
+    "hero": {
+      "max_instances_per_page": 1,
+      "required_fields": [
+        "eyebrow",
+        "headline",
+        "supporting_text",
+        "primary_cta",
+        "background_image"
+      ],
+      "required_neighbors": [
+        "trust_badges"
+      ]
+    },
+    "trust_badges": {
+      "max_instances_per_page": 1,
+      "min_items": 4,
+      "max_items": 4,
+      "required_fields": [
+        "items"
+      ],
+      "required_neighbors": [
+        "hero",
+        "services_grid"
+      ]
+    },
+    "services_grid": {
+      "max_instances_per_page": 1,
+      "min_items": 6,
+      "max_items": 6,
+      "required_fields": [
+        "headline",
+        "intro",
+        "services"
+      ],
+      "required_neighbors": [
+        "trust_badges",
+        "about_section"
+      ]
+    },
+    "about_section": {
+      "max_instances_per_page": 1,
+      "required_fields": [
+        "headline",
+        "body",
+        "logo_image"
+      ],
+      "required_neighbors": [
+        "services_grid",
+        "brands_strip"
+      ]
+    },
+    "brands_strip": {
+      "max_instances_per_page": 1,
+      "min_items": 8,
+      "max_items": 8,
+      "required_fields": [
+        "headline",
+        "brands"
+      ],
+      "required_neighbors": [
+        "about_section",
+        "cta_banner"
+      ]
+    },
+    "cta_banner": {
+      "max_instances_per_page": 1,
+      "required_fields": [
+        "headline",
+        "body",
+        "primary_cta"
+      ],
+      "required_neighbors": [
+        "brands_strip",
+        "contact_info"
+      ]
+    },
+    "contact_info": {
+      "max_instances_per_page": 1,
+      "required_fields": [
+        "headline",
+        "phones",
+        "email",
+        "address",
+        "licenses"
+      ],
+      "required_neighbors": [
+        "cta_banner",
+        "footer"
+      ]
+    },
+    "footer": {
+      "max_instances_per_page": 1,
+      "required_fields": [
+        "brand_logo",
+        "services_links",
+        "company_links",
+        "payment_image",
+        "legal_text"
+      ],
+      "required_neighbors": [
+        "contact_info"
+      ]
+    }
+  },
+  "flow_rules": {
+    "must_include_at_least_one_proof_section": true,
+    "must_end_with_cta": false,
+    "must_start_with_hero": true
+  },
+  "editor_rules": {
+    "disallow_layout_editing": true,
+    "disallow_spacing_editing": true,
+    "disallow_grid_editing": true
+  },
+  "performance_rules": {
+    "max_heavy_sections": 3,
+    "max_large_media_sections": 2,
+    "allow_back_to_back_heavy_sections": false
+  }
+}

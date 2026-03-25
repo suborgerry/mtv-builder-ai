@@ -1,0 +1,148 @@
+{
+  "contracts_version": "2.0.0",
+  "sections": {
+    "hero": {
+      "purpose": "Lead with the service promise and primary conversion action.",
+      "required_fields": [
+        "eyebrow",
+        "headline",
+        "supporting_text",
+        "primary_cta",
+        "background_image"
+      ],
+      "optional_fields": [
+        "secondary_cta",
+        "brand_logo",
+        "metrics"
+      ],
+      "supported_variants": [
+        "full-bleed-background"
+      ],
+      "supported_themes": [
+        "brand-primary"
+      ]
+    },
+    "trust_badges": {
+      "purpose": "Surface trust and coverage in a fast-scanning strip.",
+      "required_fields": [
+        "items"
+      ],
+      "optional_fields": [],
+      "supported_variants": [
+        "inline-badge-strip"
+      ],
+      "supported_themes": [
+        "accent-strip"
+      ]
+    },
+    "services_grid": {
+      "purpose": "Show the major HVAC service categories with imagery and badge icons.",
+      "required_fields": [
+        "headline",
+        "intro",
+        "services"
+      ],
+      "optional_fields": [
+        "eyebrow"
+      ],
+      "supported_variants": [
+        "image-card-grid"
+      ],
+      "supported_themes": [
+        "neutral-surface"
+      ]
+    },
+    "about_section": {
+      "purpose": "Summarize the company and local coverage with logo support.",
+      "required_fields": [
+        "headline",
+        "body",
+        "logo_image"
+      ],
+      "optional_fields": [
+        "eyebrow",
+        "location_card",
+        "coverage_card"
+      ],
+      "supported_variants": [
+        "split-logo-copy"
+      ],
+      "supported_themes": [
+        "light-surface"
+      ]
+    },
+    "brands_strip": {
+      "purpose": "Confirm supported HVAC brands through a logo wall.",
+      "required_fields": [
+        "headline",
+        "brands"
+      ],
+      "optional_fields": [
+        "eyebrow",
+        "intro"
+      ],
+      "supported_variants": [
+        "logo-wall"
+      ],
+      "supported_themes": [
+        "brand-dark"
+      ]
+    },
+    "cta_banner": {
+      "purpose": "Convert after service and brand proof content.",
+      "required_fields": [
+        "headline",
+        "body",
+        "primary_cta"
+      ],
+      "optional_fields": [
+        "eyebrow"
+      ],
+      "supported_variants": [
+        "centered-banner"
+      ],
+      "supported_themes": [
+        "accent-cta"
+      ]
+    },
+    "contact_info": {
+      "purpose": "Provide direct contact actions and licensing proof.",
+      "required_fields": [
+        "headline",
+        "phones",
+        "email",
+        "address",
+        "licenses"
+      ],
+      "optional_fields": [
+        "eyebrow"
+      ],
+      "supported_variants": [
+        "split-contact-proof"
+      ],
+      "supported_themes": [
+        "light-surface"
+      ]
+    },
+    "footer": {
+      "purpose": "Close with deep navigation, payments, social, and legal footer content.",
+      "required_fields": [
+        "brand_logo",
+        "services_links",
+        "company_links",
+        "payment_image",
+        "legal_text"
+      ],
+      "optional_fields": [
+        "summary",
+        "social_icon"
+      ],
+      "supported_variants": [
+        "multi-column-footer"
+      ],
+      "supported_themes": [
+        "footer-dark"
+      ]
+    }
+  }
+}

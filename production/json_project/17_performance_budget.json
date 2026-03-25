@@ -1,0 +1,24 @@
+{
+  "page_id": "ricks-ac-homepage",
+  "performance_version": "2.0.0",
+  "budgets": {
+    "max_heavy_sections": 3,
+    "max_above_fold_images": 3,
+    "max_hero_image_kb": 250,
+    "max_total_image_requests": 30,
+    "max_js_interactions": 1
+  },
+  "critical_assets": {
+    "lcp_candidate": "assets/images/Home-hero-background.jpg",
+    "eager_images": [
+      "assets/images/Home-hero-background.jpg"
+    ],
+    "lazy_images": "all_non_hero_images",
+    "interactive_script_scope": "mobile_menu_toggle_and_footer_year_only"
+  },
+  "notes": [
+    "Hero background remains the only eager-loaded large image.",
+    "Service cards, logos, footer icons, and payment image should remain lazy-loaded.",
+    "Minimal JS is allowed for burger menu behavior and current-year injection."
+  ]
+}

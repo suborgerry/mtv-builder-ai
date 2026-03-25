@@ -1,0 +1,95 @@
+{
+  "page_id": "ricks-ac-homepage",
+  "preview_matrix": [
+    {
+      "section_id": "hero",
+      "preview_states": [
+        {
+          "state_name": "full_content",
+          "variant": "full-bleed-background",
+          "theme": "brand-primary"
+        },
+        {
+          "state_name": "no_secondary_cta",
+          "variant": "full-bleed-background",
+          "theme": "brand-primary"
+        }
+      ]
+    },
+    {
+      "section_id": "trust_badges",
+      "preview_states": [
+        {
+          "state_name": "full_content",
+          "variant": "inline-badge-strip",
+          "theme": "accent-strip"
+        }
+      ]
+    },
+    {
+      "section_id": "services",
+      "preview_states": [
+        {
+          "state_name": "full_content",
+          "variant": "image-card-grid",
+          "theme": "neutral-surface"
+        },
+        {
+          "state_name": "fallback_icons_hidden",
+          "variant": "image-card-grid",
+          "theme": "neutral-surface"
+        }
+      ]
+    },
+    {
+      "section_id": "about",
+      "preview_states": [
+        {
+          "state_name": "full_content",
+          "variant": "split-logo-copy",
+          "theme": "light-surface"
+        }
+      ]
+    },
+    {
+      "section_id": "brands",
+      "preview_states": [
+        {
+          "state_name": "full_content",
+          "variant": "logo-wall",
+          "theme": "brand-dark"
+        }
+      ]
+    },
+    {
+      "section_id": "final_cta",
+      "preview_states": [
+        {
+          "state_name": "full_content",
+          "variant": "centered-banner",
+          "theme": "accent-cta"
+        }
+      ]
+    },
+    {
+      "section_id": "contact",
+      "preview_states": [
+        {
+          "state_name": "full_content",
+          "variant": "split-contact-proof",
+          "theme": "light-surface"
+        }
+      ]
+    },
+    {
+      "section_id": "footer",
+      "preview_states": [
+        {
+          "state_name": "full_content",
+          "variant": "multi-column-footer",
+          "theme": "footer-dark"
+        }
+      ]
+    }
+  ]
+}

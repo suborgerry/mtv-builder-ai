@@ -1,0 +1,80 @@
+{
+  "page_id": "ricks-ac-homepage",
+  "seo_version": "2.0.0",
+  "meta": {
+    "title": {
+      "value": "HVAC Service in Hancock County, MS & Louisiana | Rick's AC Maintenance & Service LLC",
+      "length": 84,
+      "valid": true
+    },
+    "description": {
+      "value": "Fast, honest, and dependable HVAC service in Hancock County, MS and Louisiana. Rick's AC offers heating, cooling, repair, installation, and maintenance for all major brands.",
+      "length": 182,
+      "valid": false
+    },
+    "robots": "index,follow",
+    "canonical": "https://ricksacllc.com/"
+  },
+  "headings": {
+    "has_h1": true,
+    "h1_count": 1,
+    "h1_text": "HVAC service built for real homes, real businesses, and real urgency.",
+    "heading_structure_valid": true,
+    "issues": []
+  },
+  "content": {
+    "word_count": 520,
+    "keyword_present": true,
+    "keyword_density": 1.7,
+    "lsi_keywords_present": true,
+    "readability_score": 82,
+    "duplicate_content_risk": false
+  },
+  "images": {
+    "total_images": 27,
+    "missing_alt_count": 0,
+    "alt_language": "en",
+    "alt_quality_score": 94
+  },
+  "links": {
+    "internal_links_count": 19,
+    "external_links_count": 1,
+    "has_broken_links": false,
+    "anchor_text_quality": 94
+  },
+  "structure": {
+    "has_schema_markup": false,
+    "has_breadcrumbs": false,
+    "has_semantic_html": true
+  },
+  "performance": {
+    "lazy_loading_images": true,
+    "image_sizes_optimized": true,
+    "cls_safe": true
+  },
+  "accessibility": {
+    "aria_present": true,
+    "contrast_ok": true
+  },
+  "indexability": {
+    "noindex": false,
+    "canonical_valid": true,
+    "duplicate_url_risk": false
+  },
+  "issues": [
+    "Meta description is likely too long and should be tightened below 160 characters."
+  ],
+  "recommendations": [
+    "Shorten the meta description while preserving local coverage and service scope.",
+    "Keep service card CTA labels specific rather than generic."
+  ],
+  "score": {
+    "meta": 88,
+    "content": 91,
+    "structure": 94,
+    "technical": 93,
+    "total": 92,
+    "threshold": 80,
+    "passed": true
+  }
+}

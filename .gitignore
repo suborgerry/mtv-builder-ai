@@ -9,9 +9,6 @@ lerna-debug.log*
 
 node_modules
 dist-ssr
-prod
-theme
-partials
 *.local
 
 # Editor directories and files
@@ -26,9 +23,7 @@ partials
 *.sw?
 
 json_project/*
-partials/*
 assets/*
-theme/*
+wp_theme/*
+simple/*
 copyright_references/*
-
-tailwind.config.js

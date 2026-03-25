@@ -1,0 +1,75 @@
+{
+  "page_id": "ricks-ac-homepage",
+  "builder_type": "static_html_tailwind_vite",
+  "sections": [
+    {
+      "layout": "hero",
+      "section_id": "hero",
+      "section_type": "hero",
+      "variant": "full-bleed-background",
+      "theme": "brand-primary",
+      "data_ref": "hero"
+    },
+    {
+      "layout": "trust_badges",
+      "section_id": "trust_badges",
+      "section_type": "trust_badges",
+      "variant": "inline-badge-strip",
+      "theme": "accent-strip",
+      "data_ref": "trust_badges"
+    },
+    {
+      "layout": "services",
+      "section_id": "services",
+      "section_type": "services_grid",
+      "variant": "image-card-grid",
+      "theme": "neutral-surface",
+      "data_ref": "services_grid"
+    },
+    {
+      "layout": "about",
+      "section_id": "about",
+      "section_type": "about_section",
+      "variant": "split-logo-copy",
+      "theme": "light-surface",
+      "data_ref": "about_section"
+    },
+    {
+      "layout": "brands",
+      "section_id": "brands",
+      "section_type": "brands_strip",
+      "variant": "logo-wall",
+      "theme": "brand-dark",
+      "data_ref": "brands_strip"
+    },
+    {
+      "layout": "final_cta",
+      "section_id": "final_cta",
+      "section_type": "cta_banner",
+      "variant": "centered-banner",
+      "theme": "accent-cta",
+      "data_ref": "cta_banner"
+    },
+    {
+      "layout": "contact",
+      "section_id": "contact",
+      "section_type": "contact_info",
+      "variant": "split-contact-proof",
+      "theme": "light-surface",
+      "data_ref": "contact_info"
+    },
+    {
+      "layout": "footer",
+      "section_id": "footer",
+      "section_type": "footer",
+      "variant": "multi-column-footer",
+      "theme": "footer-dark",
+      "data_ref": "footer"
+    }
+  ],
+  "metadata": {
+    "version": "2.0.0",
+    "generated_by": "codex",
+    "generated_at": "2026-03-24"
+  }
+}

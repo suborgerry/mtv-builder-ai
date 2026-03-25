@@ -1,0 +1,19 @@
+{
+  "page_id": "ricks-ac-homepage",
+  "checks": {
+    "hierarchy_clear": true,
+    "cta_visible": true,
+    "spacing_consistent": true,
+    "visual_rhythm_consistent": true,
+    "proof_present": true,
+    "section_order_valid": true,
+    "responsive_safe": true,
+    "mobile_navigation_present": true
+  },
+  "issues": [],
+  "notes": [
+    "Hero first, services remain the main visual content block, and contact stays near the bottom.",
+    "Dark brands section and dark footer create strong rhythm without changing the page structure."
+  ],
+  "passed": true
+}

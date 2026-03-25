@@ -1,0 +1,61 @@
+{
+  "page_id": "ricks-ac-homepage",
+  "selected_sections": [
+    {
+      "id": "hero",
+      "section_type": "hero",
+      "registry_ref": "hero",
+      "reason": "Required first section with full-banner image and immediate CTA.",
+      "required": true
+    },
+    {
+      "id": "trust_badges",
+      "section_type": "trust_badges",
+      "registry_ref": "trust_badges",
+      "reason": "Compact proof strip directly under the hero.",
+      "required": true
+    },
+    {
+      "id": "services",
+      "section_type": "services_grid",
+      "registry_ref": "services_grid",
+      "reason": "Primary service discovery block with visual cards.",
+      "required": true
+    },
+    {
+      "id": "about",
+      "section_type": "about_section",
+      "registry_ref": "about_section",
+      "reason": "Reinforces local identity and service coverage.",
+      "required": true
+    },
+    {
+      "id": "brands",
+      "section_type": "brands_strip",
+      "registry_ref": "brands_strip",
+      "reason": "Uses manufacturer logos as high-trust proof.",
+      "required": true
+    },
+    {
+      "id": "final_cta",
+      "section_type": "cta_banner",
+      "registry_ref": "cta_banner",
+      "reason": "Provides a strong conversion prompt before contact details.",
+      "required": true
+    },
+    {
+      "id": "contact",
+      "section_type": "contact_info",
+      "registry_ref": "contact_info",
+      "reason": "Shows direct phone, email, address, and licensing proof.",
+      "required": true
+    },
+    {
+      "id": "footer",
+      "section_type": "footer",
+      "registry_ref": "footer",
+      "reason": "Closes with dark footer navigation, payments, and legal text.",
+      "required": true
+    }
+  ]
+}
