@@ -1,0 +1,17 @@
+{
+  "bundle": "render",
+  "page_id": "",
+  "canonical_files": {
+    "render_spec_ref": "14_render_spec_generation.json",
+    "acf_schema_ref": "15_acf_schema.json",
+    "sanitization_policy_ref": "16_sanitization_policy.json"
+  },
+  "input_refs": {
+    "page_goal_ref": "01_page_goal.json",
+    "content_model_ref": "02_content_model.json",
+    "strategy_bundle_ref": "09_strategy_bundle.json"
+  },
+  "output_roots": [
+    "boilerplate/json_references"
+  ]
+}

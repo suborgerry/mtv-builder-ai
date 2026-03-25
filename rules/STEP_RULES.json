@@ -1,139 +1,245 @@
 {
+  "reference_root": "boilerplate/json_references",
+  "prompt_root": "boilerplate/prompts",
+  "build_targets": {
+    "html": [
+      "index.html",
+      "package.json",
+      "vite.config.js",
+      "postcss.config.js",
+      "tailwind.config.js",
+      "src/input.css",
+      "partials/*.html"
+    ],
+    "wordpress": [
+      "production/wp_theme/partials/*.php",
+      "production/wp_theme/functions.php",
+      "production/wp_theme/acf-json/*.json",
+      "production/wp_theme/mc_template.php",
+      "production/wp_theme/style.css"
+    ]
+  },
+  "logical_phases": [
+    {
+      "phase": 1,
+      "name": "Strategy Bundle",
+      "steps": [
+        1,
+        2
+      ],
+      "canonical_outputs": [
+        "01_page_goal.json",
+        "02_content_model.json",
+        "03_page_structure.json",
+        "05_theme_selection.json",
+        "06_section_variants.json",
+        "07_ui_tree.json",
+        "08_design_mapping.json",
+        "09_strategy_bundle.json"
+      ],
+      "static_inputs": [
+        "04_section_registry.json"
+      ]
+    },
+    {
+      "phase": 2,
+      "name": "Render Bundle",
+      "steps": [
+        3
+      ],
+      "canonical_outputs": [
+        "14_render_spec_generation.json",
+        "15_acf_schema.json",
+        "16_sanitization_policy.json",
+        "10_render_bundle.json"
+      ]
+    },
+    {
+      "phase": 3,
+      "name": "Delivery Bundle",
+      "steps": [
+        4
+      ],
+      "canonical_outputs": [
+        "17_performance_budget.json",
+        "20_content_optimization.json",
+        "11_delivery_bundle.json"
+      ]
+    },
+    {
+      "phase": 4,
+      "name": "Quality Bundle",
+      "steps": [
+        5,
+        6
+      ],
+      "canonical_outputs": [
+        "18_content_optimization.json",
+        "19_content_optimization.json",
+        "12_quality_bundle.json"
+      ]
+    },
+    {
+      "phase": 5,
+      "name": "Build Bundle",
+      "steps": [
+        7,
+        8
+      ],
+      "required_inputs": [
+        "13_build_bundle.json"
+      ]
+    }
+  ],
   "steps": [
     {
       "step": 1,
       "name": "Intent + Structure",
-      "reads": [],
+      "logical_phase": "Strategy Bundle",
+      "prompt": "boilerplate/prompts/01_strategy_bundle.md",
+      "reads": [
+        "04_section_registry.json"
+      ],
       "writes": [
-        "1_page_goal.json",
-        "2_content_model.json",
-        "3_page_structure.json",
-        "4_section_registry.json",
-        "5_section_list.json",
-        "6_section_variants.json",
-        "theme_selection.json"
+        "01_page_goal.json",
+        "02_content_model.json",
+        "03_page_structure.json",
+        "06_section_variants.json",
+        "05_theme_selection.json",
+        "09_strategy_bundle.json"
       ],
       "must_not_modify": [
-        "7_ui_tree.json",
-        "8_design_mapping.json",
+        "07_ui_tree.json",
+        "08_design_mapping.json",
         "14_render_spec_generation.json",
-        "23_page_builder_config.json"
+        "19_content_optimization.json"
       ]
     },
     {
       "step": 2,
       "name": "Layout + UI",
+      "logical_phase": "Strategy Bundle",
+      "prompt": "boilerplate/prompts/01_strategy_bundle.md",
       "reads": [
-        "1_page_goal.json",
-        "2_content_model.json",
-        "3_page_structure.json",
-        "4_section_registry.json",
-        "5_section_list.json",
-        "6_section_variants.json",
-        "theme_selection.json"
+        "01_page_goal.json",
+        "02_content_model.json",
+        "03_page_structure.json",
+        "04_section_registry.json",
+        "06_section_variants.json",
+        "05_theme_selection.json",
+        "09_strategy_bundle.json"
       ],
       "writes": [
-        "7_ui_tree.json",
-        "8_design_mapping.json",
-        "9_constraint_rules.json",
-        "10_structure_score.json",
-        "11_editable_rules.json",
-        "12_section_contracts.json",
-        "13_fallback_states.json"
+        "07_ui_tree.json",
+        "08_design_mapping.json",
+        "09_strategy_bundle.json"
       ],
       "must_not_modify": [
         "14_render_spec_generation.json",
         "15_acf_schema.json",
-        "23_page_builder_config.json"
+        "19_content_optimization.json"
       ]
     },
     {
       "step": 3,
       "name": "Render + Schema",
+      "logical_phase": "Render Bundle",
+      "prompt": "boilerplate/prompts/02_render_bundle.md",
       "reads": [
-        "1_page_goal.json",
-        "2_content_model.json",
-        "7_ui_tree.json",
-        "8_design_mapping.json",
-        "12_section_contracts.json",
-        "13_fallback_states.json"
+        "01_page_goal.json",
+        "02_content_model.json",
+        "07_ui_tree.json",
+        "08_design_mapping.json",
+        "09_strategy_bundle.json"
       ],
       "writes": [
         "14_render_spec_generation.json",
         "15_acf_schema.json",
-        "16_sanitization_policy.json"
+        "16_sanitization_policy.json",
+        "10_render_bundle.json"
       ],
       "must_not_modify": [
         "17_performance_budget.json",
-        "21_content_optimization.json",
-        "23_page_builder_config.json"
+        "18_content_optimization.json",
+        "19_content_optimization.json"
       ]
     },
     {
       "step": 4,
       "name": "Performance + Images",
+      "logical_phase": "Delivery Bundle",
+      "prompt": "boilerplate/prompts/03_delivery_bundle.md",
       "reads": [
-        "3_page_structure.json",
-        "6_section_variants.json",
-        "14_render_spec_generation.json"
+        "03_page_structure.json",
+        "06_section_variants.json",
+        "14_render_spec_generation.json",
+        "09_strategy_bundle.json"
       ],
       "writes": [
         "17_performance_budget.json",
-        "18_preview_matrix.json",
-        "24_image_pipeline.json"
+        "20_content_optimization.json",
+        "11_delivery_bundle.json"
       ],
       "must_not_modify": [
-        "19_visual_qa.json",
-        "20_content_qa.json",
-        "23_page_builder_config.json"
+        "18_content_optimization.json",
+        "19_content_optimization.json"
       ]
     },
     {
       "step": 5,
       "name": "Content Optimization",
+      "logical_phase": "Quality Bundle",
+      "prompt": "boilerplate/prompts/04_quality_bundle.md",
       "reads": [
-        "1_page_goal.json",
-        "2_content_model.json",
-        "3_page_structure.json",
+        "01_page_goal.json",
+        "02_content_model.json",
+        "03_page_structure.json",
         "14_render_spec_generation.json",
         "17_performance_budget.json",
-        "24_image_pipeline.json"
+        "20_content_optimization.json",
+        "09_strategy_bundle.json",
+        "11_delivery_bundle.json"
       ],
       "writes": [
-        "21_content_optimization.json"
+        "18_content_optimization.json",
+        "12_quality_bundle.json"
       ],
       "must_not_modify": [
-        "22_seo_qa.json",
-        "23_page_builder_config.json"
+        "19_content_optimization.json"
       ]
     },
     {
       "step": 6,
       "name": "QA + Final Config",
+      "logical_phase": "Quality Bundle",
+      "prompt": "boilerplate/prompts/04_quality_bundle.md",
       "reads": [
         "14_render_spec_generation.json",
         "17_performance_budget.json",
-        "18_preview_matrix.json",
-        "21_content_optimization.json",
-        "24_image_pipeline.json"
+        "18_content_optimization.json",
+        "20_content_optimization.json",
+        "11_delivery_bundle.json",
+        "12_quality_bundle.json"
       ],
       "writes": [
-        "19_visual_qa.json",
-        "20_content_qa.json",
-        "22_seo_qa.json",
-        "23_page_builder_config.json"
+        "19_content_optimization.json",
+        "12_quality_bundle.json",
+        "13_build_bundle.json"
       ],
       "must_not_modify": []
     },
     {
       "step": 7,
       "name": "HTML + Tailwind + Vite Build",
+      "logical_phase": "Build Bundle",
+      "prompt": "boilerplate/prompts/05_build_targets.md",
       "reads": [
-        "8_design_mapping.json",
+        "08_design_mapping.json",
         "14_render_spec_generation.json",
         "16_sanitization_policy.json",
-        "23_page_builder_config.json",
-        "24_image_pipeline.json"
+        "19_content_optimization.json",
+        "20_content_optimization.json",
+        "13_build_bundle.json"
       ],
       "writes": [
         "index.html",
@@ -145,10 +251,37 @@
         "partials/*.html"
       ],
       "must_not_modify": [
-        "1_page_goal.json",
-        "2_content_model.json",
-        "3_page_structure.json",
-        "21_content_optimization.json"
+        "01_page_goal.json",
+        "02_content_model.json",
+        "03_page_structure.json",
+        "18_content_optimization.json"
+      ]
+    },
+    {
+      "step": 8,
+      "name": "WordPress Build",
+      "logical_phase": "Build Bundle",
+      "prompt": "boilerplate/prompts/05_build_targets.md",
+      "reads": [
+        "14_render_spec_generation.json",
+        "15_acf_schema.json",
+        "16_sanitization_policy.json",
+        "19_content_optimization.json",
+        "20_content_optimization.json",
+        "13_build_bundle.json"
+      ],
+      "writes": [
+        "production/wp_theme/partials/*.php",
+        "production/wp_theme/functions.php",
+        "production/wp_theme/acf-json/*.json",
+        "production/wp_theme/mc_template.php",
+        "production/wp_theme/style.css"
+      ],
+      "must_not_modify": [
+        "01_page_goal.json",
+        "02_content_model.json",
+        "03_page_structure.json",
+        "18_content_optimization.json"
       ]
     }
   ]

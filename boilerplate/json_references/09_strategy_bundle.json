@@ -1,0 +1,166 @@
+{
+  "bundle": "strategy",
+  "page_id": "",
+  "canonical_files": {
+    "page_goal_ref": "01_page_goal.json",
+    "content_model_ref": "02_content_model.json",
+    "page_structure_ref": "03_page_structure.json",
+    "section_variants_ref": "06_section_variants.json",
+    "ui_tree_ref": "07_ui_tree.json",
+    "design_mapping_ref": "08_design_mapping.json",
+    "theme_selection_ref": "05_theme_selection.json"
+  },
+  "static_files": {
+    "section_registry_ref": "04_section_registry.json"
+  },
+  "section_selection": {
+    "selected_sections": [
+      {
+        "id": "",
+        "section_type": "",
+        "registry_ref": "",
+        "reason": "",
+        "required": true
+      }
+    ]
+  },
+  "constraints": {
+    "global_rules": {
+      "max_primary_cta_above_fold": 1,
+      "max_cta_per_section": 2,
+      "max_cta_per_screen": 3,
+      "allow_adjacent_same_visual_weight": false,
+      "allow_duplicate_section_types": false
+    },
+    "section_rules": {
+      "section_type_key": {
+        "max_instances_per_page": 1,
+        "min_items": null,
+        "max_items": null,
+        "required_fields": [],
+        "forbidden_variants": [],
+        "forbidden_themes": [],
+        "forbidden_neighbors": [],
+        "required_neighbors": []
+      }
+    },
+    "flow_rules": {
+      "must_include_at_least_one_proof_section": false,
+      "must_end_with_cta": false,
+      "must_start_with_hero": true
+    },
+    "editor_rules": {
+      "disallow_layout_editing": true,
+      "disallow_spacing_editing": true,
+      "disallow_grid_editing": true
+    },
+    "performance_rules": {
+      "max_heavy_sections": 2,
+      "max_large_media_sections": 3,
+      "allow_back_to_back_heavy_sections": false
+    }
+  },
+  "structure_score": {
+    "score_version": "",
+    "scores": {
+      "clarity": 0,
+      "hierarchy": 0,
+      "cta_visibility": 0,
+      "proof_presence": 0,
+      "visual_rhythm": 0,
+      "redundancy": 0,
+      "performance_risk": 0,
+      "editability": 0
+    },
+    "weighted_total": 0,
+    "threshold": 0,
+    "passed": false,
+    "issues": [],
+    "recommendations": []
+  },
+  "edit_policy": {
+    "global_edit_policy": {
+      "allow_text_editing": true,
+      "allow_media_editing": true,
+      "allow_link_editing": true,
+      "allow_layout_editing": false,
+      "allow_spacing_editing": false,
+      "allow_grid_editing": false,
+      "allow_free_theme_switching": false
+    },
+    "section_edit_rules": {
+      "section_id": {
+        "editable_fields": [],
+        "readonly_fields": [],
+        "editable_options": [],
+        "locked_options": []
+      }
+    }
+  },
+  "section_contracts": {
+    "contracts_version": "",
+    "sections": {
+      "section_type_key": {
+        "purpose": "",
+        "required_fields": [],
+        "optional_fields": [],
+        "supported_variants": [],
+        "supported_themes": [],
+        "constraints": {
+          "min_items": null,
+          "max_items": null,
+          "must_have_cta": false
+        },
+        "fallback_behavior": {
+          "on_missing_required_field": "",
+          "on_missing_optional_field": "",
+          "on_empty_repeater": ""
+        },
+        "visibility_rules": {
+          "hide_if_empty": true,
+          "hide_if_missing_required": true
+        },
+        "render_rules": {
+          "template_ref": "",
+          "wrapper_required": true
+        }
+      }
+    }
+  },
+  "fallback_states": {
+    "global_fallbacks": {
+      "missing_image": {
+        "behavior": "",
+        "replacement": null
+      },
+      "missing_alt": {
+        "behavior": "",
+        "replacement": ""
+      },
+      "missing_link": {
+        "behavior": "",
+        "replacement": null
+      }
+    },
+    "section_fallbacks": {
+      "section_id": {
+        "missing_required_fields": {
+          "behavior": ""
+        },
+        "missing_optional_fields": {
+          "behavior": ""
+        },
+        "empty_repeaters": {
+          "behavior": ""
+        },
+        "layout_fallback_variant": ""
+      }
+    },
+    "image_fallbacks": {
+      "missing_image": {
+        "behavior": "hide | placeholder",
+        "placeholder_type": "color | icon | default_image"
+      }
+    }
+  }
+}
