@@ -2,3 +2,4 @@
 # Create and use post hooks
 # Create and use AI skills
 # Option step - elements animation
+# Some prompts to script
