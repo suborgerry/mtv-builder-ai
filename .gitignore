@@ -28,3 +28,5 @@ production/wp_theme/*
 production/simple/*
 simple/assets/*
 boilerplate/copyright_references/*
+
+index.html
