@@ -11,11 +11,7 @@ Build the page strategy layer and section plan for the current page.
 - 01_page_goal.json
 - 02_content_model.json
 - 03_page_structure.json
-- 05_theme_selection.json
-- 06_section_variants.json
-- 07_ui_tree.json
-- 08_design_mapping.json
-- 09_strategy_bundle.json
+- 05_strategy.json
 
 ### STATIC INPUT
 - 04_section_registry.json
@@ -26,7 +22,7 @@ Build the page strategy layer and section plan for the current page.
 3. Assign variant and theme at section level.
 4. Build a simple UI tree without presentational hacks.
 5. Map design tokens and component classes to Tailwind usage.
-6. Store section selection, editability, contracts, constraints, fallback behavior, and structure scoring inside `09_strategy_bundle.json`.
+6. Store theme, section variants, UI tree, design mapping, section selection, editability, contracts, constraints, fallback behavior, and structure scoring inside `05_strategy.json`.
 
 ### HARD RULES
 - hero must be first
@@ -41,13 +37,9 @@ Build the page strategy layer and section plan for the current page.
   - 01_page_goal.json
   - 02_content_model.json
   - 03_page_structure.json
-  - 05_theme_selection.json
-  - 06_section_variants.json
-  - initial `09_strategy_bundle.json`
+  - initial `05_strategy.json`
 - step 2 owns:
-  - 07_ui_tree.json
-  - 08_design_mapping.json
-  - final `09_strategy_bundle.json`
+  - final `05_strategy.json`
 
 ### OUTPUT
 Return simple answer.

@@ -1,0 +1,100 @@
+{
+  "page_id": "",
+  "render_spec": {
+    "sections": [
+      {
+        "section_id": "",
+        "section_type": "",
+        "template": {
+          "path": "",
+          "engine": ""
+        },
+        "data_source": {
+          "entity_ref": "",
+          "acf_group_ref": ""
+        },
+        "field_mapping": {
+          "template_prop_key": "content_field_key"
+        },
+        "variant": "",
+        "theme": "",
+        "visibility_rules": {
+          "render_if": [],
+          "hide_if": []
+        },
+        "fallback_rules": {
+          "missing_required_field": "",
+          "missing_optional_field": "",
+          "empty_repeater": ""
+        },
+        "sanitization_profile": "",
+        "wrapper": {
+          "tag": "",
+          "classes": ""
+        },
+        "image_rendering": {
+          "use_picture_tag": true,
+          "use_srcset": true,
+          "lazy_load_default": true,
+          "fetch_priority_rules": {
+            "hero": "high",
+            "content": "auto"
+          }
+        }
+      }
+    ]
+  },
+  "acf_schema": {
+    "groups": [
+      {
+        "key": "",
+        "title": "",
+        "location": [],
+        "fields": [
+          {
+            "key": "",
+            "name": "",
+            "label": "",
+            "type": "",
+            "required": 0,
+            "instructions": "",
+            "default_value": null,
+            "wrapper": {
+              "width": "",
+              "class": "",
+              "id": ""
+            },
+            "conditional_logic": [],
+            "sub_fields": []
+          }
+        ]
+      }
+    ]
+  },
+  "sanitization_policy": {
+    "policy_version": "",
+    "global_rules": {
+      "text": "",
+      "rich_text": "",
+      "url": "",
+      "attribute": "",
+      "image_alt": "",
+      "html_fragment": ""
+    },
+    "field_rules": {
+      "field_key": {
+        "input_type": "",
+        "sanitize_with": "",
+        "escape_with": "",
+        "allow_html": false
+      }
+    },
+    "template_rules": {
+      "template_path": {
+        "default_text_escape": "",
+        "default_url_escape": "",
+        "default_attr_escape": ""
+      }
+    }
+  }
+}

@@ -22,7 +22,7 @@
   "logical_phases": [
     {
       "phase": 1,
-      "name": "Strategy Bundle",
+      "name": "Strategy",
       "steps": [
         1,
         2
@@ -31,11 +31,7 @@
         "01_page_goal.json",
         "02_content_model.json",
         "03_page_structure.json",
-        "05_theme_selection.json",
-        "06_section_variants.json",
-        "07_ui_tree.json",
-        "08_design_mapping.json",
-        "09_strategy_bundle.json"
+        "05_strategy.json"
       ],
       "static_inputs": [
         "04_section_registry.json"
@@ -43,51 +39,49 @@
     },
     {
       "phase": 2,
-      "name": "Render Bundle",
+      "name": "Render",
       "steps": [
         3
       ],
       "canonical_outputs": [
-        "14_render_spec_generation.json",
-        "15_acf_schema.json",
-        "16_sanitization_policy.json",
-        "10_render_bundle.json"
+        "06_render.json"
       ]
     },
     {
       "phase": 3,
-      "name": "Delivery Bundle",
+      "name": "Delivery",
       "steps": [
         4
       ],
       "canonical_outputs": [
-        "17_performance_budget.json",
-        "20_content_optimization.json",
-        "11_delivery_bundle.json"
+        "07_delivery.json"
       ]
     },
     {
       "phase": 4,
-      "name": "Quality Bundle",
+      "name": "Quality",
       "steps": [
         5,
         6
       ],
       "canonical_outputs": [
-        "18_content_optimization.json",
-        "19_content_optimization.json",
-        "12_quality_bundle.json"
+        "08_quality.json",
+        "09_build.json"
       ]
     },
     {
       "phase": 5,
-      "name": "Build Bundle",
+      "name": "Build Targets",
       "steps": [
         7,
         8
       ],
       "required_inputs": [
-        "13_build_bundle.json"
+        "05_strategy.json",
+        "06_render.json",
+        "07_delivery.json",
+        "08_quality.json",
+        "09_build.json"
       ]
     }
   ],
@@ -95,7 +89,7 @@
     {
       "step": 1,
       "name": "Intent + Structure",
-      "logical_phase": "Strategy Bundle",
+      "logical_phase": "Strategy",
       "prompt": "boilerplate/prompts/01_strategy_bundle.md",
       "reads": [
         "04_section_registry.json"
@@ -104,142 +98,122 @@
         "01_page_goal.json",
         "02_content_model.json",
         "03_page_structure.json",
-        "06_section_variants.json",
-        "05_theme_selection.json",
-        "09_strategy_bundle.json"
+        "05_strategy.json"
       ],
       "must_not_modify": [
-        "07_ui_tree.json",
-        "08_design_mapping.json",
-        "14_render_spec_generation.json",
-        "19_content_optimization.json"
+        "06_render.json",
+        "07_delivery.json",
+        "08_quality.json",
+        "09_build.json"
       ]
     },
     {
       "step": 2,
       "name": "Layout + UI",
-      "logical_phase": "Strategy Bundle",
+      "logical_phase": "Strategy",
       "prompt": "boilerplate/prompts/01_strategy_bundle.md",
       "reads": [
         "01_page_goal.json",
         "02_content_model.json",
         "03_page_structure.json",
         "04_section_registry.json",
-        "06_section_variants.json",
-        "05_theme_selection.json",
-        "09_strategy_bundle.json"
+        "05_strategy.json"
       ],
       "writes": [
-        "07_ui_tree.json",
-        "08_design_mapping.json",
-        "09_strategy_bundle.json"
+        "05_strategy.json"
       ],
       "must_not_modify": [
-        "14_render_spec_generation.json",
-        "15_acf_schema.json",
-        "19_content_optimization.json"
+        "06_render.json",
+        "07_delivery.json",
+        "08_quality.json",
+        "09_build.json"
       ]
     },
     {
       "step": 3,
       "name": "Render + Schema",
-      "logical_phase": "Render Bundle",
+      "logical_phase": "Render",
       "prompt": "boilerplate/prompts/02_render_bundle.md",
       "reads": [
         "01_page_goal.json",
         "02_content_model.json",
-        "07_ui_tree.json",
-        "08_design_mapping.json",
-        "09_strategy_bundle.json"
+        "05_strategy.json"
       ],
       "writes": [
-        "14_render_spec_generation.json",
-        "15_acf_schema.json",
-        "16_sanitization_policy.json",
-        "10_render_bundle.json"
+        "06_render.json"
       ],
       "must_not_modify": [
-        "17_performance_budget.json",
-        "18_content_optimization.json",
-        "19_content_optimization.json"
+        "07_delivery.json",
+        "08_quality.json",
+        "09_build.json"
       ]
     },
     {
       "step": 4,
       "name": "Performance + Images",
-      "logical_phase": "Delivery Bundle",
+      "logical_phase": "Delivery",
       "prompt": "boilerplate/prompts/03_delivery_bundle.md",
       "reads": [
         "03_page_structure.json",
-        "06_section_variants.json",
-        "14_render_spec_generation.json",
-        "09_strategy_bundle.json"
+        "05_strategy.json",
+        "06_render.json"
       ],
       "writes": [
-        "17_performance_budget.json",
-        "20_content_optimization.json",
-        "11_delivery_bundle.json"
+        "07_delivery.json"
       ],
       "must_not_modify": [
-        "18_content_optimization.json",
-        "19_content_optimization.json"
+        "08_quality.json",
+        "09_build.json"
       ]
     },
     {
       "step": 5,
       "name": "Content Optimization",
-      "logical_phase": "Quality Bundle",
+      "logical_phase": "Quality",
       "prompt": "boilerplate/prompts/04_quality_bundle.md",
       "reads": [
         "01_page_goal.json",
         "02_content_model.json",
         "03_page_structure.json",
-        "14_render_spec_generation.json",
-        "17_performance_budget.json",
-        "20_content_optimization.json",
-        "09_strategy_bundle.json",
-        "11_delivery_bundle.json"
+        "05_strategy.json",
+        "06_render.json",
+        "07_delivery.json"
       ],
       "writes": [
-        "18_content_optimization.json",
-        "12_quality_bundle.json"
+        "08_quality.json"
       ],
       "must_not_modify": [
-        "19_content_optimization.json"
+        "09_build.json"
       ]
     },
     {
       "step": 6,
-      "name": "QA + Final Config",
-      "logical_phase": "Quality Bundle",
+      "name": "QA + Build Config",
+      "logical_phase": "Quality",
       "prompt": "boilerplate/prompts/04_quality_bundle.md",
       "reads": [
-        "14_render_spec_generation.json",
-        "17_performance_budget.json",
-        "18_content_optimization.json",
-        "20_content_optimization.json",
-        "11_delivery_bundle.json",
-        "12_quality_bundle.json"
+        "05_strategy.json",
+        "06_render.json",
+        "07_delivery.json",
+        "08_quality.json"
       ],
       "writes": [
-        "19_content_optimization.json",
-        "12_quality_bundle.json",
-        "13_build_bundle.json"
+        "08_quality.json",
+        "09_build.json"
       ],
       "must_not_modify": []
     },
     {
       "step": 7,
       "name": "HTML + Tailwind + Vite Build",
-      "logical_phase": "Build Bundle",
+      "logical_phase": "Build Targets",
       "prompt": "boilerplate/prompts/05_build_targets.md",
       "reads": [
-        "08_design_mapping.json",
-        "14_render_spec_generation.json",
-        "16_sanitization_policy.json",
-        "19_content_optimization.json",
-        "20_content_optimization.json",
-        "13_build_bundle.json"
+        "05_strategy.json",
+        "06_render.json",
+        "07_delivery.json",
+        "08_quality.json",
+        "09_build.json"
       ],
       "writes": [
         "index.html",
@@ -254,21 +228,20 @@
         "01_page_goal.json",
         "02_content_model.json",
         "03_page_structure.json",
-        "18_content_optimization.json"
+        "04_section_registry.json"
       ]
     },
     {
       "step": 8,
       "name": "WordPress Build",
-      "logical_phase": "Build Bundle",
+      "logical_phase": "Build Targets",
       "prompt": "boilerplate/prompts/05_build_targets.md",
       "reads": [
-        "14_render_spec_generation.json",
-        "15_acf_schema.json",
-        "16_sanitization_policy.json",
-        "19_content_optimization.json",
-        "20_content_optimization.json",
-        "13_build_bundle.json"
+        "05_strategy.json",
+        "06_render.json",
+        "07_delivery.json",
+        "08_quality.json",
+        "09_build.json"
       ],
       "writes": [
         "production/wp_theme/partials/*.php",
@@ -281,7 +254,7 @@
         "01_page_goal.json",
         "02_content_model.json",
         "03_page_structure.json",
-        "18_content_optimization.json"
+        "04_section_registry.json"
       ]
     }
   ]

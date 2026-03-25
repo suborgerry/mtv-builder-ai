@@ -1,14 +1,19 @@
 # Optimized Pipeline
 
 ## Goal
-Preserve the current repository folder structure while reducing the working complexity of the JSON pipeline.
+Preserve the current repository layout while reducing the JSON reference surface to the minimum useful set.
 
-This optimization does not rename or move the existing folders:
+This model keeps the prompt folder, rules folder, and build targets unchanged, but reduces `boilerplate/json_references/` from many small interdependent files to 9 files total:
 
-- `boilerplate/prompts/` stays the prompt source
-- `boilerplate/json_references/` stays the JSON reference directory
-- `rules/` stays the operational contract for agents
-- `src/`, project root, and `production/wp_theme/` stay the build output targets
+- `01_page_goal.json`
+- `02_content_model.json`
+- `03_page_structure.json`
+- `04_section_registry.json`
+- `05_strategy.json`
+- `06_render.json`
+- `07_delivery.json`
+- `08_quality.json`
+- `09_build.json`
 
 ## Physical Layout
 
@@ -20,30 +25,23 @@ This optimization does not rename or move the existing folders:
 - `boilerplate/prompts/04_quality_bundle.md`
 - `boilerplate/prompts/05_build_targets.md`
 
-Canonical merged prompts:
-- `01_strategy_bundle.md`
-- `02_render_bundle.md`
-- `03_delivery_bundle.md`
-- `04_quality_bundle.md`
-- `05_build_targets.md`
-
 ### Reference JSON source
-All pipeline JSON must live in:
+All pipeline JSON lives in:
 
 - `boilerplate/json_references/`
 
-This includes two files already referenced by prompts/rules and treated as first-class references:
+Atomic inputs:
+- `01_page_goal.json`
+- `02_content_model.json`
+- `03_page_structure.json`
+- `04_section_registry.json`
 
-- `boilerplate/json_references/05_theme_selection.json`
-- `boilerplate/json_references/20_content_optimization.json`
-
-Merged bundle references:
-
-- `boilerplate/json_references/09_strategy_bundle.json`
-- `boilerplate/json_references/10_render_bundle.json`
-- `boilerplate/json_references/11_delivery_bundle.json`
-- `boilerplate/json_references/12_quality_bundle.json`
-- `boilerplate/json_references/13_build_bundle.json`
+Merged working references:
+- `05_strategy.json`
+- `06_render.json`
+- `07_delivery.json`
+- `08_quality.json`
+- `09_build.json`
 
 ### Build outputs
 - static HTML build:
@@ -62,60 +60,46 @@ Merged bundle references:
 
 ## Logical Bundles
 
-The repository keeps the current file names, but they should be treated as 5 logical bundles.
-
-### 1. Strategy Bundle
+### 1. Strategy
 Generated in steps 1-2.
 
-Canonical files:
+Canonical outputs:
 - `01_page_goal.json`
 - `02_content_model.json`
 - `03_page_structure.json`
-- `05_theme_selection.json`
-- `06_section_variants.json`
-- `07_ui_tree.json`
-- `08_design_mapping.json`
-- `09_strategy_bundle.json`
+- `05_strategy.json`
 
-Static library file:
+Static input:
 - `04_section_registry.json`
 
-### 2. Render Bundle
+### 2. Render
 Generated in step 3.
 
-Canonical files:
-- `14_render_spec_generation.json`
-- `15_acf_schema.json`
-- `16_sanitization_policy.json`
+Canonical outputs:
+- `06_render.json`
 
-### 3. Delivery Bundle
+### 3. Delivery
 Generated in step 4.
 
-Canonical files:
-- `17_performance_budget.json`
-- `20_content_optimization.json`
-- `11_delivery_bundle.json`
+Canonical outputs:
+- `07_delivery.json`
 
-### 4. Quality Bundle
+### 4. Quality
 Generated in steps 5-6.
 
-Canonical file:
-- `18_content_optimization.json`
-- `12_quality_bundle.json`
-- `13_build_bundle.json`
+Canonical outputs:
+- `08_quality.json`
+- `09_build.json`
 
-Derived summary:
-- `19_content_optimization.json`
-
-### 5. Build Bundle
+### 5. Build Targets
 Generated in steps 7-8.
 
-Static target input:
-- `19_content_optimization.json`
-
-Build target:
-- HTML/Vite in root + `src/`
-- WordPress in `production/wp_theme/`
+Required inputs:
+- `05_strategy.json`
+- `06_render.json`
+- `07_delivery.json`
+- `08_quality.json`
+- `09_build.json`
 
 ## What To Generate Where
 
@@ -130,9 +114,7 @@ Write:
 - `boilerplate/json_references/01_page_goal.json`
 - `boilerplate/json_references/02_content_model.json`
 - `boilerplate/json_references/03_page_structure.json`
-- `boilerplate/json_references/05_theme_selection.json`
-- `boilerplate/json_references/06_section_variants.json`
-- `boilerplate/json_references/09_strategy_bundle.json`
+- initial `boilerplate/json_references/05_strategy.json`
 
 ### Step 2
 Prompt:
@@ -143,9 +125,7 @@ Read:
 - `boilerplate/json_references/04_section_registry.json`
 
 Write:
-- `boilerplate/json_references/07_ui_tree.json`
-- `boilerplate/json_references/08_design_mapping.json`
-- `boilerplate/json_references/09_strategy_bundle.json`
+- final `boilerplate/json_references/05_strategy.json`
 
 ### Step 3
 Prompt:
@@ -154,15 +134,10 @@ Prompt:
 Read:
 - `boilerplate/json_references/01_page_goal.json`
 - `boilerplate/json_references/02_content_model.json`
-- `boilerplate/json_references/07_ui_tree.json`
-- `boilerplate/json_references/08_design_mapping.json`
-- `boilerplate/json_references/09_strategy_bundle.json`
+- `boilerplate/json_references/05_strategy.json`
 
 Write:
-- `boilerplate/json_references/14_render_spec_generation.json`
-- `boilerplate/json_references/15_acf_schema.json`
-- `boilerplate/json_references/16_sanitization_policy.json`
-- `boilerplate/json_references/10_render_bundle.json`
+- `boilerplate/json_references/06_render.json`
 
 ### Step 4
 Prompt:
@@ -170,14 +145,11 @@ Prompt:
 
 Read:
 - `boilerplate/json_references/03_page_structure.json`
-- `boilerplate/json_references/06_section_variants.json`
-- `boilerplate/json_references/14_render_spec_generation.json`
-- `boilerplate/json_references/09_strategy_bundle.json`
+- `boilerplate/json_references/05_strategy.json`
+- `boilerplate/json_references/06_render.json`
 
 Write:
-- `boilerplate/json_references/17_performance_budget.json`
-- `boilerplate/json_references/20_content_optimization.json`
-- `boilerplate/json_references/11_delivery_bundle.json`
+- `boilerplate/json_references/07_delivery.json`
 
 ### Step 5
 Prompt:
@@ -187,43 +159,37 @@ Read:
 - `boilerplate/json_references/01_page_goal.json`
 - `boilerplate/json_references/02_content_model.json`
 - `boilerplate/json_references/03_page_structure.json`
-- `boilerplate/json_references/14_render_spec_generation.json`
-- `boilerplate/json_references/17_performance_budget.json`
-- `boilerplate/json_references/20_content_optimization.json`
-- `boilerplate/json_references/09_strategy_bundle.json`
-- `boilerplate/json_references/11_delivery_bundle.json`
+- `boilerplate/json_references/05_strategy.json`
+- `boilerplate/json_references/06_render.json`
+- `boilerplate/json_references/07_delivery.json`
 
 Write:
-- `boilerplate/json_references/18_content_optimization.json`
-- `boilerplate/json_references/12_quality_bundle.json`
+- initial `boilerplate/json_references/08_quality.json`
 
 ### Step 6
 Prompt:
 - `boilerplate/prompts/04_quality_bundle.md`
 
 Read:
-- `boilerplate/json_references/14_render_spec_generation.json`
-- `boilerplate/json_references/17_performance_budget.json`
-- `boilerplate/json_references/18_content_optimization.json`
-- `boilerplate/json_references/20_content_optimization.json`
-- `boilerplate/json_references/11_delivery_bundle.json`
-- `boilerplate/json_references/12_quality_bundle.json`
+- `boilerplate/json_references/05_strategy.json`
+- `boilerplate/json_references/06_render.json`
+- `boilerplate/json_references/07_delivery.json`
+- `boilerplate/json_references/08_quality.json`
 
 Write:
-- `boilerplate/json_references/19_content_optimization.json`
-- `boilerplate/json_references/12_quality_bundle.json`
-- `boilerplate/json_references/13_build_bundle.json`
+- final `boilerplate/json_references/08_quality.json`
+- `boilerplate/json_references/09_build.json`
 
 ### Step 7
 Prompt:
 - `boilerplate/prompts/05_build_targets.md`
 
 Read:
-- `boilerplate/json_references/08_design_mapping.json`
-- `boilerplate/json_references/14_render_spec_generation.json`
-- `boilerplate/json_references/16_sanitization_policy.json`
-- `boilerplate/json_references/19_content_optimization.json`
-- `boilerplate/json_references/20_content_optimization.json`
+- `boilerplate/json_references/05_strategy.json`
+- `boilerplate/json_references/06_render.json`
+- `boilerplate/json_references/07_delivery.json`
+- `boilerplate/json_references/08_quality.json`
+- `boilerplate/json_references/09_build.json`
 
 Write:
 - `index.html`
@@ -239,11 +205,11 @@ Prompt:
 - `boilerplate/prompts/05_build_targets.md`
 
 Read:
-- `boilerplate/json_references/14_render_spec_generation.json`
-- `boilerplate/json_references/15_acf_schema.json`
-- `boilerplate/json_references/16_sanitization_policy.json`
-- `boilerplate/json_references/19_content_optimization.json`
-- `boilerplate/json_references/20_content_optimization.json`
+- `boilerplate/json_references/05_strategy.json`
+- `boilerplate/json_references/06_render.json`
+- `boilerplate/json_references/07_delivery.json`
+- `boilerplate/json_references/08_quality.json`
+- `boilerplate/json_references/09_build.json`
 
 Write:
 - `production/wp_theme/partials/*.php`
@@ -254,41 +220,8 @@ Write:
 
 ## Reduction Rules
 
-To reduce prompt and JSON bloat without changing filenames:
-
-### Treat these as canonical
-- `01_page_goal.json`
-- `02_content_model.json`
-- `03_page_structure.json`
-- `05_theme_selection.json`
-- `06_section_variants.json`
-- `07_ui_tree.json`
-- `08_design_mapping.json`
-- `09_strategy_bundle.json`
-- `14_render_spec_generation.json`
-- `15_acf_schema.json`
-- `16_sanitization_policy.json`
-- `10_render_bundle.json`
-- `17_performance_budget.json`
-- `11_delivery_bundle.json`
-- `18_content_optimization.json`
-- `12_quality_bundle.json`
-- `19_content_optimization.json`
-- `13_build_bundle.json`
-- `20_content_optimization.json`
-- `05_theme_selection.json`
-
-### Treat these as library or static inputs
-- `04_section_registry.json`
-
-## Prompt Compression
-
-Canonical merged prompts:
-
-1. `01_strategy_bundle.md`
-2. `02_render_bundle.md`
-3. `03_delivery_bundle.md`
-4. `04_quality_bundle.md`
-5. `05_build_targets.md`
-
-The prompt layer is now reduced to 5 canonical prompts and 5 logical JSON bundles.
+- Keep `01-04` as atomic source inputs.
+- Keep `05-09` as merged working references.
+- Do not reintroduce thin bundle wrappers that only duplicate refs.
+- Store strategy, render, delivery, quality, and build state inside their merged file instead of cross-linking several small files.
+- Prefer one write target per step unless a step explicitly owns a base input.

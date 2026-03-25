@@ -5,9 +5,9 @@
       "bundle": "strategy",
       "depends_on": [],
       "used_by": [
-        "09_strategy_bundle.json",
         "01_page_goal.json",
-        "03_page_structure.json"
+        "03_page_structure.json",
+        "05_strategy.json"
       ]
     },
     "01_page_goal.json": {
@@ -18,9 +18,9 @@
       "used_by": [
         "02_content_model.json",
         "03_page_structure.json",
-        "09_strategy_bundle.json",
-        "14_render_spec_generation.json",
-        "18_content_optimization.json"
+        "05_strategy.json",
+        "06_render.json",
+        "08_quality.json"
       ]
     },
     "02_content_model.json": {
@@ -29,11 +29,9 @@
         "01_page_goal.json"
       ],
       "used_by": [
-        "07_ui_tree.json",
-        "09_strategy_bundle.json",
-        "14_render_spec_generation.json",
-        "15_acf_schema.json",
-        "18_content_optimization.json"
+        "05_strategy.json",
+        "06_render.json",
+        "08_quality.json"
       ]
     },
     "03_page_structure.json": {
@@ -43,250 +41,84 @@
         "04_section_registry.json"
       ],
       "used_by": [
-        "06_section_variants.json",
-        "07_ui_tree.json",
-        "09_strategy_bundle.json",
-        "17_performance_budget.json",
-        "18_content_optimization.json"
+        "05_strategy.json",
+        "07_delivery.json",
+        "08_quality.json"
       ]
     },
-    "06_section_variants.json": {
+    "05_strategy.json": {
       "bundle": "strategy",
       "depends_on": [
-        "03_page_structure.json",
-        "05_theme_selection.json"
-      ],
-      "used_by": [
-        "07_ui_tree.json",
-        "09_strategy_bundle.json",
-        "17_performance_budget.json",
-        "20_content_optimization.json"
-      ]
-    },
-    "07_ui_tree.json": {
-      "bundle": "strategy",
-      "depends_on": [
+        "01_page_goal.json",
         "02_content_model.json",
         "03_page_structure.json",
-        "06_section_variants.json",
-        "09_strategy_bundle.json"
+        "04_section_registry.json"
       ],
       "used_by": [
-        "08_design_mapping.json",
-        "14_render_spec_generation.json"
-      ]
-    },
-    "08_design_mapping.json": {
-      "bundle": "strategy",
-      "depends_on": [
-        "07_ui_tree.json",
-        "05_theme_selection.json",
-        "09_strategy_bundle.json"
-      ],
-      "used_by": [
-        "14_render_spec_generation.json",
+        "06_render.json",
+        "07_delivery.json",
+        "08_quality.json",
+        "09_build.json",
         "index.html",
         "production/wp_theme/mc_template.php"
       ]
     },
-    "05_theme_selection.json": {
-      "bundle": "strategy",
+    "06_render.json": {
+      "bundle": "render",
       "depends_on": [
-        "01_page_goal.json"
-      ],
-      "used_by": [
-        "06_section_variants.json",
-        "08_design_mapping.json",
-        "09_strategy_bundle.json"
-      ]
-    },
-    "09_strategy_bundle.json": {
-      "bundle": "strategy",
-      "depends_on": [
-        "04_section_registry.json",
         "01_page_goal.json",
         "02_content_model.json",
-        "03_page_structure.json",
-        "06_section_variants.json",
-        "07_ui_tree.json",
-        "08_design_mapping.json",
-        "05_theme_selection.json"
+        "05_strategy.json"
       ],
       "used_by": [
-        "14_render_spec_generation.json",
-        "15_acf_schema.json",
-        "17_performance_budget.json",
-        "18_content_optimization.json",
-        "11_delivery_bundle.json"
-      ]
-    },
-    "14_render_spec_generation.json": {
-      "bundle": "render",
-      "depends_on": [
-        "02_content_model.json",
-        "07_ui_tree.json",
-        "08_design_mapping.json",
-        "09_strategy_bundle.json"
-      ],
-      "used_by": [
-        "15_acf_schema.json",
-        "16_sanitization_policy.json",
-        "17_performance_budget.json",
-        "20_content_optimization.json",
-        "18_content_optimization.json",
-        "19_content_optimization.json",
-        "10_render_bundle.json",
-        "13_build_bundle.json"
-      ]
-    },
-    "15_acf_schema.json": {
-      "bundle": "render",
-      "depends_on": [
-        "02_content_model.json",
-        "14_render_spec_generation.json",
-        "09_strategy_bundle.json"
-      ],
-      "used_by": [
-        "10_render_bundle.json",
+        "07_delivery.json",
+        "08_quality.json",
+        "09_build.json",
+        "index.html",
         "production/wp_theme/acf-json/*.json",
-        "production/wp_theme/functions.php"
+        "production/wp_theme/functions.php",
+        "production/wp_theme/partials/*.php"
       ]
     },
-    "16_sanitization_policy.json": {
-      "bundle": "render",
-      "depends_on": [
-        "14_render_spec_generation.json"
-      ],
-      "used_by": [
-        "10_render_bundle.json",
-        "13_build_bundle.json",
-        "index.html",
-        "production/wp_theme/partials/*.php",
-        "production/wp_theme/mc_template.php"
-      ]
-    },
-    "10_render_bundle.json": {
-      "bundle": "render",
-      "depends_on": [
-        "01_page_goal.json",
-        "02_content_model.json",
-        "09_strategy_bundle.json",
-        "14_render_spec_generation.json",
-        "15_acf_schema.json",
-        "16_sanitization_policy.json"
-      ],
-      "used_by": [
-        "11_delivery_bundle.json",
-        "12_quality_bundle.json"
-      ]
-    },
-    "17_performance_budget.json": {
+    "07_delivery.json": {
       "bundle": "delivery",
       "depends_on": [
         "03_page_structure.json",
-        "06_section_variants.json",
-        "14_render_spec_generation.json",
-        "09_strategy_bundle.json"
+        "05_strategy.json",
+        "06_render.json"
       ],
       "used_by": [
-        "20_content_optimization.json",
-        "11_delivery_bundle.json",
-        "18_content_optimization.json",
-        "19_content_optimization.json",
-        "12_quality_bundle.json"
-      ]
-    },
-    "20_content_optimization.json": {
-      "bundle": "delivery",
-      "depends_on": [
-        "06_section_variants.json",
-        "14_render_spec_generation.json",
-        "17_performance_budget.json"
-      ],
-      "used_by": [
-        "11_delivery_bundle.json",
-        "18_content_optimization.json",
-        "19_content_optimization.json",
-        "12_quality_bundle.json",
-        "13_build_bundle.json",
+        "08_quality.json",
+        "09_build.json",
         "index.html",
         "production/wp_theme/partials/*.php"
       ]
     },
-    "11_delivery_bundle.json": {
-      "bundle": "delivery",
-      "depends_on": [
-        "03_page_structure.json",
-        "06_section_variants.json",
-        "14_render_spec_generation.json",
-        "17_performance_budget.json",
-        "20_content_optimization.json",
-        "09_strategy_bundle.json"
-      ],
-      "used_by": [
-        "18_content_optimization.json",
-        "19_content_optimization.json",
-        "12_quality_bundle.json"
-      ]
-    },
-    "18_content_optimization.json": {
+    "08_quality.json": {
       "bundle": "quality",
       "depends_on": [
         "01_page_goal.json",
         "02_content_model.json",
         "03_page_structure.json",
-        "14_render_spec_generation.json",
-        "17_performance_budget.json",
-        "20_content_optimization.json",
-        "09_strategy_bundle.json",
-        "11_delivery_bundle.json"
+        "05_strategy.json",
+        "06_render.json",
+        "07_delivery.json"
       ],
       "used_by": [
-        "19_content_optimization.json",
-        "12_quality_bundle.json"
-      ]
-    },
-    "19_content_optimization.json": {
-      "bundle": "quality",
-      "depends_on": [
-        "14_render_spec_generation.json",
-        "17_performance_budget.json",
-        "18_content_optimization.json",
-        "20_content_optimization.json",
-        "11_delivery_bundle.json",
-        "12_quality_bundle.json"
-      ],
-      "used_by": [
-        "13_build_bundle.json",
+        "09_build.json",
         "index.html",
         "partials/*.html",
         "production/wp_theme/mc_template.php",
         "production/wp_theme/partials/*.php"
       ]
     },
-    "12_quality_bundle.json": {
-      "bundle": "quality",
-      "depends_on": [
-        "14_render_spec_generation.json",
-        "17_performance_budget.json",
-        "18_content_optimization.json",
-        "20_content_optimization.json",
-        "11_delivery_bundle.json",
-        "19_content_optimization.json"
-      ],
-      "used_by": [
-        "13_build_bundle.json"
-      ]
-    },
-    "13_build_bundle.json": {
+    "09_build.json": {
       "bundle": "build",
       "depends_on": [
-        "08_design_mapping.json",
-        "14_render_spec_generation.json",
-        "15_acf_schema.json",
-        "16_sanitization_policy.json",
-        "19_content_optimization.json",
-        "20_content_optimization.json"
+        "05_strategy.json",
+        "06_render.json",
+        "07_delivery.json",
+        "08_quality.json"
       ],
       "used_by": [
         "index.html",

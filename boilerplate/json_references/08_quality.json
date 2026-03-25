@@ -1,0 +1,248 @@
+{
+  "page_id": "",
+  "content_optimization": {
+    "optimization_version": "",
+    "inputs": {
+      "page_goal_ref": "",
+      "content_model_ref": "",
+      "page_structure_ref": "",
+      "render_ref": "",
+      "delivery_ref": ""
+    },
+    "image_optimization": {
+      "missing_alt": [],
+      "non_descriptive_alt": [],
+      "oversized_images": [],
+      "wrong_formats": [],
+      "lcp_risk_images": [],
+      "proposed_actions": []
+    },
+    "seo_optimization": {
+      "primary_keyword": "",
+      "secondary_keywords": [],
+      "related_entities": [],
+      "content_intent": "",
+      "title_alignment": {
+        "keyword_present": false,
+        "needs_update": false,
+        "proposed_action": ""
+      },
+      "h1_alignment": {
+        "keyword_present": false,
+        "needs_update": false,
+        "proposed_action": ""
+      },
+      "intro_alignment": {
+        "answers_intent_early": false,
+        "keyword_present": false,
+        "needs_update": false,
+        "proposed_action": ""
+      },
+      "heading_optimization": {
+        "structure_valid": false,
+        "missing_topics": [],
+        "duplicate_topics": [],
+        "proposed_actions": []
+      },
+      "body_content_optimization": {
+        "thin_sections": [],
+        "redundant_sections": [],
+        "missing_supporting_content": [],
+        "proposed_actions": []
+      },
+      "linking_optimization": {
+        "missing_internal_links": [],
+        "weak_anchor_texts": [],
+        "proposed_actions": []
+      },
+      "image_seo_optimization": {
+        "missing_alt_fields": [],
+        "non_descriptive_alt_fields": [],
+        "alt_language": "en",
+        "proposed_actions": []
+      },
+      "people_first_check": {
+        "helpful": false,
+        "experience_signals_present": false,
+        "trust_signals_present": false,
+        "over_optimized_risk": false,
+        "proposed_actions": []
+      }
+    },
+    "core_web_vitals_optimization": {
+      "lcp": {
+        "risk_level": "",
+        "largest_candidate_type": "",
+        "issues": [],
+        "proposed_actions": []
+      },
+      "inp": {
+        "risk_level": "",
+        "interactive_components": [],
+        "issues": [],
+        "proposed_actions": []
+      },
+      "cls": {
+        "risk_level": "",
+        "unstable_components": [],
+        "issues": [],
+        "proposed_actions": []
+      },
+      "media_optimization": {
+        "heavy_images": [],
+        "missing_dimensions": [],
+        "lazyload_exceptions": [],
+        "proposed_actions": []
+      },
+      "layout_optimization": {
+        "unstable_blocks": [],
+        "deep_dom_sections": [],
+        "proposed_actions": []
+      },
+      "font_optimization": {
+        "blocking_fonts_present": false,
+        "proposed_actions": []
+      },
+      "script_optimization": {
+        "heavy_components": [],
+        "unnecessary_interactions": [],
+        "proposed_actions": []
+      }
+    },
+    "section_level_actions": [
+      {
+        "section_id": "",
+        "section_type": "",
+        "seo_actions": [],
+        "cwv_actions": [],
+        "content_actions": [],
+        "render_actions": []
+      }
+    ],
+    "global_actions": {
+      "content_changes": [],
+      "template_changes": [],
+      "media_changes": [],
+      "layout_changes": []
+    },
+    "outputs": {
+      "update_page_structure": false,
+      "update_render_ref": false,
+      "update_build_ref": false
+    }
+  },
+  "qa_reports": {
+    "visual": {
+      "checks": {
+        "hierarchy_clear": false,
+        "cta_visible": false,
+        "spacing_consistent": false,
+        "visual_rhythm_consistent": false,
+        "proof_present": false,
+        "section_order_valid": false,
+        "responsive_safe": false
+      },
+      "issues": [],
+      "notes": [],
+      "passed": false
+    },
+    "content": {
+      "checks": {
+        "required_fields_present": false,
+        "links_valid": false,
+        "images_present": false,
+        "alt_texts_present": false,
+        "alt_texts_language": "en",
+        "cta_labels_present": false,
+        "no_empty_repeaters_rendered": false,
+        "images": {
+          "all_have_alt": false,
+          "all_linked_correctly": false,
+          "no_empty_images": false
+        }
+      },
+      "issues": [],
+      "notes": [],
+      "passed": false
+    },
+    "seo": {
+      "seo_version": "",
+      "meta": {
+        "title": {
+          "value": "",
+          "length": 0,
+          "valid": false
+        },
+        "description": {
+          "value": "",
+          "length": 0,
+          "valid": false
+        },
+        "robots": "",
+        "canonical": ""
+      },
+      "headings": {
+        "has_h1": false,
+        "h1_count": 0,
+        "h1_text": "",
+        "heading_structure_valid": false,
+        "issues": []
+      },
+      "content": {
+        "word_count": 0,
+        "keyword_present": false,
+        "keyword_density": 0,
+        "lsi_keywords_present": false,
+        "readability_score": 0,
+        "duplicate_content_risk": false
+      },
+      "images": {
+        "total_images": 0,
+        "missing_alt_count": 0,
+        "alt_language": "en",
+        "alt_quality_score": 0
+      },
+      "links": {
+        "internal_links_count": 0,
+        "external_links_count": 0,
+        "has_broken_links": false,
+        "anchor_text_quality": 0
+      },
+      "structure": {
+        "has_schema_markup": false,
+        "has_breadcrumbs": false,
+        "has_semantic_html": false
+      },
+      "performance": {
+        "lazy_loading_images": false,
+        "image_sizes_optimized": false,
+        "cls_safe": false
+      },
+      "accessibility": {
+        "aria_present": false,
+        "contrast_ok": false
+      },
+      "indexability": {
+        "noindex": false,
+        "canonical_valid": false,
+        "duplicate_url_risk": false
+      },
+      "issues": [],
+      "recommendations": [],
+      "score": {
+        "meta": 0,
+        "content": 0,
+        "structure": 0,
+        "technical": 0,
+        "total": 0,
+        "threshold": 0,
+        "passed": false
+      }
+    }
+  },
+  "status": {
+    "optimized": false,
+    "requires_regeneration": false,
+    "notes": []
+  }
+}

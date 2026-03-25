@@ -8,16 +8,13 @@ IMPORTANT: Follow step rules strictly.
 Build the final page from canonical JSON into either static HTML or WordPress.
 
 ### SHARED READS
-- 14_render_spec_generation.json
-- 16_sanitization_policy.json
-- 19_content_optimization.json
-- 20_content_optimization.json
-- 13_build_bundle.json
+- 05_strategy.json
+- 06_render.json
+- 07_delivery.json
+- 08_quality.json
+- 09_build.json
 
 ### HTML TARGET
-Additional read:
-- 08_design_mapping.json
-
 Write:
 - index.html
 - package.json
@@ -28,9 +25,6 @@ Write:
 - partials/*.html
 
 ### WORDPRESS TARGET
-Additional read:
-- 15_acf_schema.json
-
 Write:
 - production/wp_theme/partials/*.php
 - production/wp_theme/functions.php

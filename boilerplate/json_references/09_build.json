@@ -1,0 +1,52 @@
+{
+  "page_id": "",
+  "page_builder_config": {
+    "builder_type": "",
+    "sections": [
+      {
+        "layout": "",
+        "section_id": "",
+        "section_type": "",
+        "variant": "",
+        "theme": "",
+        "template": "",
+        "acf_group": "",
+        "data_ref": "",
+        "render_section_ref": ""
+      }
+    ],
+    "metadata": {
+      "version": "",
+      "generated_by": "",
+      "generated_at": ""
+    }
+  },
+  "targets": {
+    "html": {
+      "inputs": [
+        "05_strategy.json",
+        "06_render.json",
+        "07_delivery.json",
+        "08_quality.json",
+        "09_build.json"
+      ],
+      "output_roots": [
+        ".",
+        "src",
+        "partials"
+      ]
+    },
+    "wordpress": {
+      "inputs": [
+        "05_strategy.json",
+        "06_render.json",
+        "07_delivery.json",
+        "08_quality.json",
+        "09_build.json"
+      ],
+      "output_roots": [
+        "production/wp_theme"
+      ]
+    }
+  }
+}

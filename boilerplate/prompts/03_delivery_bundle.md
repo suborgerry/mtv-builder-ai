@@ -9,17 +9,15 @@ Define performance, preview, and image delivery behavior.
 
 ### READ
 - 03_page_structure.json
-- 06_section_variants.json
-- 14_render_spec_generation.json
+- 05_strategy.json
+- 06_render.json
 
 ### CANONICAL OUTPUTS
-- 17_performance_budget.json
-- 20_content_optimization.json
-- 11_delivery_bundle.json
+- 07_delivery.json
 
 ### BUNDLE RULES
 1. Define page and section performance budgets.
-2. Define preview states for minimal, full, and fallback content inside `11_delivery_bundle.json`.
+2. Define preview states for minimal, full, and fallback content inside `07_delivery.json`.
 3. Define image assignment, formats, dimensions, loading, and alt requirements.
 
 ### HARD RULES

@@ -1,0 +1,93 @@
+{
+  "page_id": "",
+  "performance_budget": {
+    "budget": {
+      "max_heavy_sections": 0,
+      "max_large_images": 0,
+      "max_interactive_blocks": 0,
+      "max_total_media_blocks": 0
+    },
+    "media_rules": {
+      "lazy_load_images": true,
+      "require_responsive_sizes": true,
+      "allow_autoplay_video": false,
+      "prefer_static_over_slider": true
+    },
+    "image_rules": {
+      "max_hero_image_kb": 200,
+      "max_content_image_kb": 150,
+      "allowed_formats": [
+        "webp",
+        "avif"
+      ],
+      "require_srcset": true,
+      "require_lazy_loading": true
+    },
+    "section_weights": {
+      "section_id": {
+        "weight": "",
+        "heavy_media": false,
+        "interactive": false
+      }
+    },
+    "violations": []
+  },
+  "image_pipeline": {
+    "global_rules": {
+      "default_format_priority": [
+        "avif",
+        "webp"
+      ],
+      "require_dimensions": true,
+      "default_lazy_loading": true,
+      "hero_lazy_loading": false,
+      "require_alt_en": true
+    },
+    "sections": [
+      {
+        "section_id": "",
+        "section_type": "",
+        "images": [
+          {
+            "field_key": "",
+            "role": "hero | content | icon | gallery",
+            "asset_ref": "",
+            "formats": [
+              "avif",
+              "webp"
+            ],
+            "width": 0,
+            "height": 0,
+            "srcset_required": true,
+            "sizes": "",
+            "loading": "eager | lazy",
+            "fetchpriority": "high | auto | low",
+            "alt_text": ""
+          }
+        ]
+      }
+    ]
+  },
+  "preview_matrix": {
+    "sections": [
+      {
+        "section_id": "",
+        "preview_states": [
+          {
+            "state_name": "",
+            "content_mode": "",
+            "variant": "",
+            "theme": "",
+            "description": ""
+          }
+        ]
+      }
+    ],
+    "global_preview_modes": [
+      "minimal_content",
+      "full_content",
+      "empty_optional_fields",
+      "fallback_state"
+    ]
+  }
+}

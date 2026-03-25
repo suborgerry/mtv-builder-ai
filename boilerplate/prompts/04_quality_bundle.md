@@ -8,21 +8,21 @@ IMPORTANT: Follow step rules strictly.
 Optimize content and produce QA reports plus final builder config.
 
 ### READ
-- 14_render_spec_generation.json
-- 17_performance_budget.json
-- 18_content_optimization.json
-- 20_content_optimization.json
-- 11_delivery_bundle.json
+- 01_page_goal.json
+- 02_content_model.json
+- 03_page_structure.json
+- 05_strategy.json
+- 06_render.json
+- 07_delivery.json
 
 ### CANONICAL OUTPUTS
-- 18_content_optimization.json
-- 19_content_optimization.json
-- 12_quality_bundle.json
+- 08_quality.json
+- 09_build.json
 
 ### BUNDLE RULES
 1. Optimize content for SEO, readability, and Core Web Vitals.
-2. Store visual, content, and SEO QA reports inside `12_quality_bundle.json`.
-3. Build final page assembly config from render, media, and optimization layers.
+2. Store visual, content, and SEO QA reports inside `08_quality.json`.
+3. Build final page assembly config inside `09_build.json` from strategy, render, delivery, and optimization layers.
 
 ### HARD RULES
 - fail on critical issues
@@ -32,12 +32,10 @@ Optimize content and produce QA reports plus final builder config.
 
 ### STEP SPLIT
 - step 5 owns:
-  - 18_content_optimization.json
-  - initial `12_quality_bundle.json`
+  - initial `08_quality.json`
 - step 6 owns:
-  - 19_content_optimization.json
-  - final `12_quality_bundle.json`
-  - `13_build_bundle.json`
+  - final `08_quality.json`
+  - `09_build.json`
 
 ### OUTPUT
 Return simple answer.
