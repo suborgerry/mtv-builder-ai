@@ -4,6 +4,6 @@ import tailwindcss from '@tailwindcss/vite'
 export default defineConfig({
   plugins: [tailwindcss()],
   build: {
-    outDir: 'prod'
+    outDir: 'production/simple'
   }
 })
