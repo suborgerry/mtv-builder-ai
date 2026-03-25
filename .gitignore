@@ -22,9 +22,12 @@ dist-ssr
 *.sln
 *.sw?
 
-json_project/*
 assets/*
-production/wp_theme/*
+
+production/json_project/*
+production/wp_theme/acf-json/*
+production/wp_theme/partials/*
+production/wp_theme/style.css
 production/simple/*
 simple/assets/*
 boilerplate/copyright_references/*
